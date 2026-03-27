@@ -1,0 +1,1009 @@
+[{
+  "_id": {
+    "$oid": "69aaa1f0e9f560fa8689c31d"
+  },
+  "naziv": "Impact Hub",
+  "grad": "Beograd",
+  "adresa": "Makedonska 21",
+  "firma": "Impact doo",
+  "menadzer": "Marko Marković",
+  "likes": 150,
+  "dislikes": 5,
+  "status": "active",
+  "slike": [
+    "impact_hub_1.jpg",
+    "impact_hub_2.jpg",
+    "impact_hub_3.jpg"
+  ],
+  "lokacija": {
+    "lat": 44.8153,
+    "lng": 20.4611
+  },
+  "jedinice": [
+    {
+      "id": "j1",
+      "tip": "sto",
+      "naziv": "Sto 1",
+      "kapacitet": 5,
+      "cena": 1500,
+      "oprema": "stolovi i druga oprema..."
+    },
+    {
+      "id": "j1_2",
+      "tip": "sto",
+      "naziv": "Sto 2",
+      "kapacitet": 1,
+      "cena": 1500,
+      "oprema": "stolovi i druga oprema..."
+    },
+    {
+      "id": "j2",
+      "tip": "kancelarija",
+      "naziv": "Kancelarija 1",
+      "kapacitet": 3,
+      "cena": 4500,
+      "oprema": "kancelarijska oprema..."
+    },
+    {
+      "id": "j2_2",
+      "tip": "kancelarija",
+      "naziv": "Kancelarija 2",
+      "kapacitet": 3,
+      "cena": 4500,
+      "oprema": "kancelarijska oprema..."
+    },
+    {
+      "id": "j3",
+      "tip": "sala",
+      "naziv": "Sala 1",
+      "kapacitet": 11,
+      "cena": 8000,
+      "oprema": "kancelarijska opema..."
+    },
+    {
+      "id": "j3_2",
+      "tip": "sala",
+      "naziv": "Sala 2",
+      "kapacitet": 11,
+      "cena": 8000,
+      "oprema": "kancelarijska oprema..."
+    }
+  ],
+  "opis": "Smešten u istorijskom zdanju u samom centru Beograda, Impact Hub nudi autentičan radni ambijent. Sa dupliranim brojem sala i privatnih kancelarija, ovaj prostor je idealan za ozbiljne timove koji traže networking.",
+  "kor_ime": "marko",
+  "maxKazne": 3
+},
+{
+  "_id": {
+    "$oid": "69aaa1f0e9f560fa8689c31e"
+  },
+  "naziv": "In Centar",
+  "grad": "Beograd",
+  "adresa": "Cara Lazara 5",
+  "firma": "InOrg",
+  "menadzer": "Jova Jović",
+  "likes": 120,
+  "dislikes": 2,
+  "status": "active",
+  "slike": [
+    "in_centar_1.jpg",
+    "in_centar_2.jpg"
+  ],
+  "lokacija": {
+    "lat": 44.8182,
+    "lng": 20.4552
+  },
+  "jedinice": [
+    {
+      "id": "j5",
+      "tip": "sto",
+      "naziv": "Sto 1",
+      "kapacitet": 6,
+      "cena": 1200,
+      "oprema": "stolovi i druga oprema..."
+    },
+    {
+      "id": "j5_2",
+      "tip": "sto",
+      "naziv": "Sto 2",
+      "kapacitet": 1,
+      "cena": 1200,
+      "oprema": "stolovi i druga oprema..."
+    },
+    {
+      "id": "j6",
+      "tip": "kancelarija",
+      "naziv": "Kancelarija 1",
+      "kapacitet": 2,
+      "cena": 3500,
+      "oprema:": "kancelarijska i druga oprema..."
+    },
+    {
+      "id": "j6_2",
+      "tip": "kancelarija",
+      "naziv": "Kancelarija 2",
+      "kapacitet": 2,
+      "cena": 3500,
+      "oprema": "kancelarijska i druga oprema..."
+    },
+    {
+      "id": "j7",
+      "tip": "sala",
+      "naziv": "Sala 1",
+      "kapacitet": 12,
+      "cena": 7500,
+      "oprema": "stolice, projektori druga oprema..."
+    },
+    {
+      "id": "j7_2",
+      "tip": "sala",
+      "naziv": "Sala 2",
+      "kapacitet": 12,
+      "cena": 7500,
+      "oprema:": "stolice, projektori i druga oprema ..."
+    }
+  ],
+  "opis": "In Centar pruža savršen balans između privatnosti i zajedničkog rada. Uz pristupačne cene i prostrane sale za sastanke, prostor je prilagođen frilenserima koji žele maksimalnu produktivnost u srcu grada.",
+  "id_menadzera": "69a581ba4416c1f71e2d5986",
+  "kor_ime": "jova",
+  "maxKazne": 3
+},
+{
+  "_id": {
+    "$oid": "69aaa1f0e9f560fa8689c31f"
+  },
+  "naziv": "Smart Office",
+  "grad": "Beograd",
+  "adresa": "Knez Mihailova 30",
+  "firma": "Smart Co",
+  "menadzer": "Ana Anić",
+  "likes": 200,
+  "dislikes": 10,
+  "status": "active",
+  "slike": [
+    "smart_office_1.jpg",
+    "smart_office_2.jpg"
+  ],
+  "lokacija": {
+    "lat": 44.8167,
+    "lng": 20.4593
+  },
+  "jedinice": [
+    {
+      "id": "j4",
+      "tip": "sto",
+      "naziv": "Sto 1",
+      "kapacitet": 6,
+      "cena": 1800,
+      "oprema": "stolovi i druga oprema..."
+    },
+    {
+      "id": "j4_2",
+      "tip": "sto",
+      "naziv": "Sto 2",
+      "kapacitet": 1,
+      "cena": 1800,
+      "oprema": "stolovi i druga oprema..."
+    },
+    {
+      "id": "j8",
+      "tip": "kancelarija",
+      "naziv": "Kancelarija 1",
+      "kapacitet": 4,
+      "cena": 5000,
+      "oprema": "kancelarijska i druga oprema..."
+    },
+    {
+      "id": "j8_2",
+      "tip": "kancelarija",
+      "naziv": "Kancelarija 2",
+      "kapacitet": 4,
+      "cena": 5000,
+      "oprema": "kancelarijska i druga oprema..."
+    },
+    {
+      "id": "j9",
+      "tip": "sala",
+      "naziv": "Sala 1",
+      "kapacitet": 10,
+      "cena": 9000,
+      "oprema": "stolice, projektori i druga oprema..."
+    },
+    {
+      "id": "j9_2",
+      "tip": "sala",
+      "naziv": "Sala 2",
+      "kapacitet": 10,
+      "cena": 9000,
+      "oprema": "stolice, projektori i druga oprema..."
+    }
+  ],
+  "opis": "Najmoderniji coworking u Knez Mihailovoj nudi premium uslugu. Smart Office poseduje vrhunsku opremu i enterijer, idealan za razvoj vašeg biznisa na najprestižnijoj lokaciji u gradu.",
+  "kor_ime": "ana",
+  "maxKazne": 3
+},
+{
+  "_id": {
+    "$oid": "69aaa1f0e9f560fa8689c320"
+  },
+  "naziv": "Startit Centar",
+  "grad": "Novi Sad",
+  "adresa": "Miroslava Antića 2",
+  "firma": "SEE ICT",
+  "menadzer": "Sara Sarić",
+  "likes": 180,
+  "dislikes": 4,
+  "status": "active",
+  "slike": [
+    "startit_ns_1.jpg",
+    "startit_ns_2.jpg"
+  ],
+  "lokacija": {
+    "lat": 45.2516,
+    "lng": 19.8465
+  },
+  "jedinice": [
+    {
+      "id": "j10",
+      "tip": "sto",
+      "naziv": "Sto 1",
+      "kapacitet": 7,
+      "cena": 1600,
+      "oprema": "stolovi i druga oprema..."
+    },
+    {
+      "id": "j10_2",
+      "tip": "sto",
+      "naziv": "Sto 2",
+      "kapacitet": 1,
+      "cena": 1600,
+      "oprema": "stolovi i druga oprema..."
+    },
+    {
+      "id": "j11",
+      "tip": "kancelarija",
+      "naziv": "Kancelarija 1",
+      "kapacitet": 4,
+      "cena": 5500,
+      "oprema": "kancelarijska i druga oprema..."
+    },
+    {
+      "id": "j11_2",
+      "tip": "kancelarija",
+      "naziv": "Kancelarija 2",
+      "kapacitet": 4,
+      "cena": 5500,
+      "oprema": "kancelarijska i druga oprema..."
+    },
+    {
+      "id": "j11_s",
+      "tip": "sala",
+      "naziv": "Sala 1",
+      "kapacitet": 12,
+      "cena": 8200,
+      "oprema": "stolice, projektori i druga oprema..."
+    },
+    {
+      "id": "j11_s2",
+      "tip": "sala",
+      "naziv": "Sala 2",
+      "kapacitet": 12,
+      "cena": 8200,
+      "oprema": "stolice, projektori i druga opema..."
+    }
+  ],
+  "opis": "Startit Centar u Novom Sadu je čvorište IT zajednice u Vojvodini. Nudi brojne mogućnosti za edukaciju i networking, uz moderan prostor prilagođen potrebama tehnoloških timova.",
+  "kor_ime": "sara",
+  "maxKazne": 3
+},
+{
+  "_id": {
+    "$oid": "69aaa1f0e9f560fa8689c321"
+  },
+  "naziv": "Mokrin House",
+  "grad": "Mokrin",
+  "adresa": "Svetog Save 25",
+  "firma": "Terra Panonica",
+  "menadzer": "Branko Branković",
+  "likes": 250,
+  "dislikes": 2,
+  "status": "active",
+  "slike": [
+    "mokrin_1.jpg",
+    "mokrin_2.jpg"
+  ],
+  "lokacija": {
+    "lat": 45.9333,
+    "lng": 20.4167
+  },
+  "jedinice": [
+    {
+      "id": "j12",
+      "tip": "sto",
+      "naziv": "Sto 1",
+      "kapacitet": 10,
+      "cena": 2000,
+      "oprema": "stolovi i druga oprema ..."
+    },
+    {
+      "id": "j12_2",
+      "tip": "sto",
+      "naziv": "Sto 2",
+      "kapacitet": 1,
+      "cena": 2000,
+      "oprema": "stolovi i druga oprema..."
+    },
+    {
+      "id": "j13",
+      "tip": "kancelarija",
+      "naziv": "Kancelarija 1",
+      "kapacitet": 4,
+      "cena": 6000,
+      "oprema": "kancelarijska i druga oprema..."
+    },
+    {
+      "id": "j13_2",
+      "tip": "kancelarija",
+      "naziv": "Kancelarija 2",
+      "kapacitet": 4,
+      "cena": 6000,
+      "oprema": "kancelarijska i druga oprema..."
+    },
+    {
+      "id": "j13_s",
+      "tip": "sala",
+      "naziv": "Sala 1",
+      "kapacitet": 15,
+      "cena": 10000,
+      "oprema": "stolice, projektori i druga oprema..."
+    },
+    {
+      "id": "j13_s2",
+      "tip": "sala",
+      "naziv": "Sala 2",
+      "kapacitet": 15,
+      "cena": 10000,
+      "oprema": "stolice, projektori i druga oprema..."
+    }
+  ],
+  "opis": "Mokrin House je jedinstveni ruralni coworking prostor. Idealan je za digitalne nomade i timove koji traže mir i fokus u inspirativnom okruženju vojvođanske ravnice.",
+  "kor_ime": "branko",
+  "maxKazne": 3
+},
+{
+  "_id": {
+    "$oid": "69aaa1f0e9f560fa8689c322"
+  },
+  "naziv": "Deli prostor",
+  "grad": "Niš",
+  "adresa": "Davidova 2",
+  "firma": "Deli Niš",
+  "menadzer": "Nikola Nikić",
+  "likes": 166,
+  "dislikes": 3,
+  "status": "active",
+  "slike": [
+    "deli_nis_1.jpg",
+    "deli_nis_2.jpg"
+  ],
+  "lokacija": {
+    "lat": 43.3209,
+    "lng": 21.8954
+  },
+  "jedinice": [
+    {
+      "id": "j14",
+      "tip": "sto",
+      "naziv": "Sto 1",
+      "kapacitet": 5,
+      "cena": 1100,
+      "oprema": "stolovi i druga oprema..."
+    },
+    {
+      "id": "j14_2",
+      "tip": "sto",
+      "naziv": "Sto 2",
+      "kapacitet": 6,
+      "cena": 1100,
+      "oprema": "stolovi i druga oprema..."
+    },
+    {
+      "id": "j15",
+      "tip": "sala",
+      "naziv": "Sala 1",
+      "kapacitet": 12,
+      "cena": 7000,
+      "oprema": "stolice, projektori i druga oprema..."
+    },
+    {
+      "id": "j15_2",
+      "tip": "sala",
+      "naziv": "Sala 2",
+      "kapacitet": 12,
+      "cena": 7000,
+      "oprema": "stolice, projektori i druga oprema..."
+    }
+  ],
+  "opis": "Deli prostor u Nišu je dom kreativne industrije. Nudi inspirativnu atmosferu uz povoljne cene, pružajući odličnu podršku lokalnim preduzetnicima i dizajnerima.",
+  "kor_ime": "nikola",
+  "maxKazne": 3
+},
+{
+  "_id": {
+    "$oid": "69aaa1f0e9f560fa8689c323"
+  },
+  "naziv": "Think Inovative",
+  "grad": "Niš",
+  "adresa": "Bulevar Sv. Cara Konstantina 80",
+  "firma": "TI Hub",
+  "menadzer": "Mila Milić",
+  "likes": 95,
+  "dislikes": 1,
+  "status": "active",
+  "slike": [
+    "ti_hub_1.jpg",
+    "ti_hub_2.jpg"
+  ],
+  "lokacija": {
+    "lat": 43.3109,
+    "lng": 21.9254
+  },
+  "jedinice": [
+    {
+      "id": "j16",
+      "tip": "sto",
+      "naziv": "Sto 1",
+      "kapacitet": 10,
+      "cena": 1000,
+      "oprema": "stolovi i druga oprema..."
+    },
+    {
+      "id": "j16_2",
+      "tip": "sto",
+      "naziv": "Sto 2",
+      "kapacitet": 1,
+      "cena": 1000,
+      "oprema": "stolovi i druga oprema..."
+    },
+    {
+      "id": "j17",
+      "tip": "kancelarija",
+      "naziv": "Kancelarija 1",
+      "kapacitet": 2,
+      "cena": 3000,
+      "oprema": "kancelarijska i druga oprema..."
+    },
+    {
+      "id": "j17_2",
+      "tip": "kancelarija",
+      "naziv": "Kancelarija 2",
+      "kapacitet": 2,
+      "cena": 3000,
+      "oprema": "kancelarijska i druga oprema..."
+    }
+  ],
+  "opis": "Think Inovative je tehnološki hab fokusiran na podršku inovativnim IT projektima. Nudi vrhunsku infrastrukturu neophodnu za razvoj softvera i globalno poslovanje.",
+  "kor_ime": "mila",
+  "maxKazne": 3
+},
+{
+  "_id": {
+    "$oid": "69aaa1f0e9f560fa8689c324"
+  },
+  "naziv": "Hub8",
+  "grad": "Beograd",
+  "adresa": "Bulevar Milutina Milankovića 1",
+  "firma": "H8 Group",
+  "menadzer": "Petar Petrović",
+  "likes": 90,
+  "dislikes": 3,
+  "status": "active",
+  "slike": [
+    "hub8_1.jpg",
+    "hub8_2.jpg"
+  ],
+  "lokacija": {
+    "lat": 44.8067,
+    "lng": 20.4125
+  },
+  "jedinice": [
+    {
+      "id": "j18",
+      "tip": "sto",
+      "naziv": "Sto 1",
+      "kapacitet": 15,
+      "cena": 1400
+    },
+    {
+      "id": "j18_2",
+      "tip": "sto",
+      "naziv": "Sto 2",
+      "kapacitet": 1,
+      "cena": 1400
+    },
+    {
+      "id": "j19",
+      "tip": "sala",
+      "naziv": "Sala 1",
+      "kapacitet": 12,
+      "cena": 8500
+    },
+    {
+      "id": "j19_2",
+      "tip": "sala",
+      "naziv": "Sala 2",
+      "kapacitet": 12,
+      "cena": 8500
+    }
+  ],
+  "opis": "Smešten na Novom Beogradu, Hub8 je dizajniran za maksimalnu funkcionalnost i udobnost. Nudi moderne sale za sastanke i radne stolove u dinamičnom okruženju.",
+  "kor_ime": "petar",
+  "maxKazne": 3
+},
+{
+  "_id": {
+    "$oid": "69aaa1f0e9f560fa8689c325"
+  },
+  "naziv": "Kreativni Poligon",
+  "grad": "Kragujevac",
+  "adresa": "Glavna 12",
+  "firma": "KP KG",
+  "menadzer": "Lana Lanić",
+  "likes": 110,
+  "dislikes": 1,
+  "status": "active",
+  "slike": [
+    "poligon_1.jpg",
+    "poligon_2.jpg"
+  ],
+  "lokacija": {
+    "lat": 44.0125,
+    "lng": 20.9122
+  },
+  "jedinice": [
+    {
+      "id": "j20",
+      "tip": "sto",
+      "naziv": "Sto 1",
+      "kapacitet": 12,
+      "cena": 1000
+    },
+    {
+      "id": "j20_2",
+      "tip": "sto",
+      "naziv": "Sto 2",
+      "kapacitet": 2,
+      "cena": 1000
+    },
+    {
+      "id": "j21",
+      "tip": "sala",
+      "naziv": "Sala 1",
+      "kapacitet": 15,
+      "cena": 6000
+    },
+    {
+      "id": "j21_2",
+      "tip": "sala",
+      "naziv": "Sala 2",
+      "kapacitet": 15,
+      "cena": 6000
+    }
+  ],
+  "opis": "Kreativni Poligon u Kragujevcu spaja umetnost i biznis. Najbolje je mesto za edukaciju i saradnju u Šumadiji, sa fokusom na podršku mladim kreativcima.",
+  "kor_ime": "lana",
+  "maxKazne": 3
+},
+{
+  "_id": {
+    "$oid": "69aaa1f0e9f560fa8689c326"
+  },
+  "naziv": "Subotica Hub",
+  "grad": "Subotica",
+  "adresa": "Korzo 1",
+  "firma": "SubHub",
+  "menadzer": "Dejan Dejić",
+  "likes": 131,
+  "dislikes": 4,
+  "status": "active",
+  "slike": [
+    "subhub_1.jpg"
+  ],
+  "lokacija": {
+    "lat": 46.1,
+    "lng": 19.6667
+  },
+  "jedinice": [
+    {
+      "id": "j22",
+      "tip": "sto",
+      "naziv": "Sto 1",
+      "kapacitet": 5,
+      "cena": 1500
+    },
+    {
+      "id": "j22_2",
+      "tip": "sto",
+      "naziv": "Sto 2",
+      "kapacitet": 1,
+      "cena": 1500
+    },
+    {
+      "id": "j23",
+      "tip": "kancelarija",
+      "naziv": "Kancelarija 1",
+      "kapacitet": 6,
+      "cena": 6000
+    },
+    {
+      "id": "j23_2",
+      "tip": "kancelarija",
+      "naziv": "Kancelarija 2",
+      "kapacitet": 6,
+      "cena": 6000
+    }
+  ],
+  "opis": "Subotica Hub se nalazi u prelepoj zgradi na glavnom šetalištu Korzo. Pruža mirnu atmosferu idealnu za fokusiran rad i ozbiljno poslovanje na severu zemlje.",
+  "kor_ime": "dejan",
+  "maxKazne": 3
+},
+{
+  "_id": {
+    "$oid": "69aecdcee1b497abc40dbc6a"
+  },
+  "naziv": "Science Hub",
+  "grad": "Beograd",
+  "adresa": "Glavna 13, Beograd",
+  "firma": "Deli Niš",
+  "kor_ime": "nikola",
+  "menadzer": "Nikola Nikić",
+  "likes": 0,
+  "dislikes": 0,
+  "slike": [
+    "default_prostor.jpg"
+  ],
+  "status": "pending",
+  "lokacija": {
+    "lat": 44.8434259,
+    "lng": 20.4118814
+  },
+  "jedinice": [
+    {
+      "tip": "sto",
+      "kapacitet": 1,
+      "naziv": "Sto 1",
+      "cena": 13,
+      "oprema": "",
+      "_id": {
+        "$oid": "69aecdcee1b497abc40dbc6b"
+      }
+    },
+    {
+      "tip": "sto",
+      "kapacitet": 1,
+      "naziv": "Sto 2",
+      "cena": 13,
+      "oprema": "",
+      "_id": {
+        "$oid": "69aecdcee1b497abc40dbc6c"
+      }
+    },
+    {
+      "tip": "sto",
+      "kapacitet": 1,
+      "naziv": "Sto 3",
+      "cena": 13,
+      "oprema": "",
+      "_id": {
+        "$oid": "69aecdcee1b497abc40dbc6d"
+      }
+    },
+    {
+      "tip": "sto",
+      "kapacitet": 1,
+      "naziv": "Sto 4",
+      "cena": 13,
+      "oprema": "",
+      "_id": {
+        "$oid": "69aecdcee1b497abc40dbc6e"
+      }
+    },
+    {
+      "tip": "sto",
+      "kapacitet": 1,
+      "naziv": "Sto 5",
+      "cena": 13,
+      "oprema": "",
+      "_id": {
+        "$oid": "69aecdcee1b497abc40dbc6f"
+      }
+    },
+    {
+      "tip": "kancelarija",
+      "kapacitet": 3,
+      "naziv": "K1",
+      "cena": 13,
+      "oprema": "",
+      "_id": {
+        "$oid": "69aecdcee1b497abc40dbc70"
+      }
+    },
+    {
+      "tip": "kancelarija",
+      "kapacitet": 3,
+      "naziv": "K2",
+      "cena": 13,
+      "oprema": "",
+      "_id": {
+        "$oid": "69aecdcee1b497abc40dbc71"
+      }
+    },
+    {
+      "tip": "sala",
+      "kapacitet": 11,
+      "naziv": "S1",
+      "cena": 13,
+      "oprema": "projektor, smart tabla, sto, 11 stolica, racunar, zavese",
+      "_id": {
+        "$oid": "69aecdcee1b497abc40dbc72"
+      }
+    }
+  ],
+  "opis": "Dve kancelarije sa 3 stola, jedan otvoreni prostor sa 5 stolova, jedna sala moderno opremljena sa 11 mesta",
+  "maxKazne": 3
+},
+{
+  "_id": {
+    "$oid": "69aeeffa14e76d486f9a9614"
+  },
+  "naziv": "Wheel Way Hub 2026",
+  "grad": "Beograd",
+  "adresa": "Bulevar kralja Aleksandra 73",
+  "firma": "Deli Niš",
+  "kor_ime": "nikola",
+  "menadzer": "Nikola Nikić",
+  "likes": 0,
+  "dislikes": 0,
+  "slike": [
+    "default_prostor.jpg"
+  ],
+  "status": "pending",
+  "lokacija": {
+    "lat": 44.806,
+    "lng": 20.476
+  },
+  "jedinice": [
+    {
+      "tip": "sto",
+      "kapacitet": 1,
+      "naziv": "Sto 1",
+      "cena": 500,
+      "oprema": "",
+      "_id": {
+        "$oid": "69aeeffa14e76d486f9a9615"
+      }
+    },
+    {
+      "tip": "sto",
+      "kapacitet": 1,
+      "naziv": "Sto 2",
+      "cena": 500,
+      "oprema": "",
+      "_id": {
+        "$oid": "69aeeffa14e76d486f9a9616"
+      }
+    },
+    {
+      "tip": "sto",
+      "kapacitet": 1,
+      "naziv": "Sto 3",
+      "cena": 500,
+      "oprema": "",
+      "_id": {
+        "$oid": "69aeeffa14e76d486f9a9617"
+      }
+    },
+    {
+      "tip": "sto",
+      "kapacitet": 1,
+      "naziv": "Sto 4",
+      "cena": 500,
+      "oprema": "",
+      "_id": {
+        "$oid": "69aeeffa14e76d486f9a9618"
+      }
+    },
+    {
+      "tip": "sto",
+      "kapacitet": 1,
+      "naziv": "Sto 5",
+      "cena": 500,
+      "oprema": "",
+      "_id": {
+        "$oid": "69aeeffa14e76d486f9a9619"
+      }
+    },
+    {
+      "tip": "kancelarija",
+      "kapacitet": 4,
+      "naziv": "Kancelarija 101",
+      "cena": 2000,
+      "oprema": "Klima, Štampač",
+      "_id": {
+        "$oid": "69aeeffa14e76d486f9a961a"
+      }
+    },
+    {
+      "tip": "sala",
+      "kapacitet": 12,
+      "naziv": "Sala za sastanke",
+      "cena": 5000,
+      "oprema": "Projektor",
+      "_id": {
+        "$oid": "69aeeffa14e76d486f9a961b"
+      }
+    }
+  ],
+  "opis": "Pristupačan radni prostor u centru grada.",
+  "maxKazne": 3
+},
+{
+  "_id": {
+    "$oid": "69bf3e76b4c7704389b7dcc1"
+  },
+  "naziv": "Dragon Fly",
+  "grad": "Beograd",
+  "adresa": "Cvetna 27, Beograd",
+  "firma": "Deli Niš",
+  "kor_ime": "nikola",
+  "menadzer": "Nikola Nikić",
+  "likes": 0,
+  "dislikes": 0,
+  "slike": [
+    "default_prostor.jpg"
+  ],
+  "status": "pending",
+  "lokacija": {
+    "lat": 44.799378,
+    "lng": 20.4094707
+  },
+  "jedinice": [
+    {
+      "tip": "sto",
+      "kapacitet": 1,
+      "naziv": "Sto 1",
+      "cena": 18,
+      "oprema": "",
+      "_id": {
+        "$oid": "69bf3e76b4c7704389b7dcc2"
+      }
+    },
+    {
+      "tip": "sto",
+      "kapacitet": 1,
+      "naziv": "Sto 2",
+      "cena": 18,
+      "oprema": "",
+      "_id": {
+        "$oid": "69bf3e76b4c7704389b7dcc3"
+      }
+    },
+    {
+      "tip": "sto",
+      "kapacitet": 1,
+      "naziv": "Sto 3",
+      "cena": 18,
+      "oprema": "",
+      "_id": {
+        "$oid": "69bf3e76b4c7704389b7dcc4"
+      }
+    },
+    {
+      "tip": "sto",
+      "kapacitet": 1,
+      "naziv": "Sto 4",
+      "cena": 18,
+      "oprema": "",
+      "_id": {
+        "$oid": "69bf3e76b4c7704389b7dcc5"
+      }
+    },
+    {
+      "tip": "sto",
+      "kapacitet": 1,
+      "naziv": "Sto 5",
+      "cena": 18,
+      "oprema": "",
+      "_id": {
+        "$oid": "69bf3e76b4c7704389b7dcc6"
+      }
+    },
+    {
+      "tip": "kancelarija",
+      "kapacitet": 6,
+      "naziv": "",
+      "cena": 18,
+      "oprema": "",
+      "_id": {
+        "$oid": "69bf3e76b4c7704389b7dcc7"
+      }
+    },
+    {
+      "tip": "sala",
+      "kapacitet": 11,
+      "naziv": "Sala 1",
+      "cena": 18,
+      "oprema": "projektor, tabla, racunari, sto, stolice ....",
+      "_id": {
+        "$oid": "69bf3e76b4c7704389b7dcc8"
+      }
+    },
+    {
+      "tip": "sala",
+      "kapacitet": 11,
+      "naziv": "Sala 2",
+      "cena": 18,
+      "oprema": "50 stolica, veliko filmsko platno, konferencijski sto...",
+      "_id": {
+        "$oid": "69bf3e76b4c7704389b7dcc9"
+      }
+    }
+  ],
+  "opis": "Prostor za izdavanje. Prikladno za poslovne sajmove, tim building-e i konferencije.",
+  "maxKazne": 3
+},
+{
+  "_id": {
+    "$oid": "69bf4e99b4c7704389b7dd04"
+  },
+  "naziv": "Deli Kreativni Centar",
+  "grad": "Niš",
+  "adresa": "7. jula, 15",
+  "firma": "Deli Niš",
+  "kor_ime": "nikola",
+  "menadzer": "Nikola Nikić",
+  "likes": 0,
+  "dislikes": 0,
+  "slike": [
+    "default_prostor.jpg"
+  ],
+  "status": "pending",
+  "lokacija": {
+    "lat": 43.3215,
+    "lng": 21.8961
+  },
+  "jedinice": [
+    {
+      "tip": "sto",
+      "kapacitet": 1,
+      "naziv": "Sto A1",
+      "cena": 1200,
+      "oprema": "Monitor 27 inča, mehanička tastatura",
+      "_id": {
+        "$oid": "69bf4e99b4c7704389b7dd05"
+      }
+    },
+    {
+      "tip": "kancelarija",
+      "kapacitet": 4,
+      "naziv": "Kancelarija Fokus",
+      "cena": 5000,
+      "oprema": "Bela tabla, klima uređaj",
+      "_id": {
+        "$oid": "69bf4e99b4c7704389b7dd06"
+      }
+    },
+    {
+      "tip": "sala",
+      "kapacitet": 12,
+      "naziv": "Sala Brainstorm",
+      "cena": 8000,
+      "oprema": "Projektor, surround sistem, 4K TV",
+      "_id": {
+        "$oid": "69bf4e99b4c7704389b7dd07"
+      }
+    }
+  ],
+  "opis": "Novi prošireni prostor u centru Niša namenjen isključivo IT startupima i dizajnerima. Nudi ultra brzi internet i ergonomsku opremu.",
+  "maxKazne": 3
+}]

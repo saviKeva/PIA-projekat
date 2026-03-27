@@ -1,0 +1,160 @@
+<div class="container mt-4">
+  <h2 class="text-success">{{prostor?.naziv}}</h2>
+  <p><i class="bi bi-geo-alt"></i> {{prostor?.adresa}}, {{prostor?.grad}}</p>
+
+  <div class="row">
+    <div class="col-md-6">
+      <div class="card shadow-sm p-3">
+        <h5>Opis</h5>
+        <p>{{prostor?.opis}}</p>
+        <hr>
+        <p><strong>Menadžer:</strong> {{prostor?.menadzer}}</p>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div id="map" style="height: 400px;" class="rounded border shadow"></div>
+    </div>
+  </div>
+</div>
+
+<!-- Galerija slika -->
+<div class="container mt-5" *ngIf="prostor">
+
+  <div class="card shadow-lg border-0 overflow-hidden">
+    <div class="row g-0">
+
+      <div class="col-md-6 bg-dark p-3 d-flex flex-column align-items-center">
+
+        <div class="main-img-container mb-3 position-relative">
+          <img [src]="'http://localhost:4000/uploads/' + glavnaSlika" class="img-fluid rounded shadow"
+            style="max-height: 400px; object-fit: contain;" alt="Glavna slika">
+
+          <div class="zoom-overlay" (click)="uvecajSliku(glavnaSlika)">
+            <i class="bi bi-search"></i>
+          </div>
+        </div>
+
+        <div class="d-flex justify-content-center gap-2">
+          <div *ngFor="let slika of prostor.slike.slice(0, 5)" (click)="postaviGlavnuSliku(slika)"
+            style="cursor: pointer;">
+            <img [src]="'http://localhost:4000/uploads/' + slika" class="img-thumbnail"
+              [class.border-warning]="slika === glavnaSlika" [class.border-3]="slika === glavnaSlika"
+              style="width: 80px; height: 60px; object-fit: cover;">
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 p-4 bg-white d-flex flex-column justify-content-center align-items-center"
+        style="min-height: 400px;">
+
+        <h2 class="text-dark">Galerija slika</h2>
+
+        <div class="d-flex gap-4 mt-4 justify-content-center">
+          <div class="text-success h5">
+            <i class="bi bi-hand-thumbs-up-fill"></i> Likes: {{ prostor.likes }}
+          </div>
+          <div class="text-danger h5">
+            <i class="bi bi-hand-thumbs-down-fill"></i> Dislikes: {{ prostor.dislikes }}
+          </div>
+        </div>
+
+        <button class="btn btn-secondary mt-5" (click)="nazad()">Vrati se nazad</button>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+<div class="custom-modal" *ngIf="isModalOpen" (click)="zatvoriModal()">
+  <span class="close-icon">&times;</span>
+  <img [src]="'http://localhost:4000/uploads/' + slikaZaUvecanje" class="modal-img">
+</div>
+<!-- Kalendar i rezervisanje -->
+<div class="card mt-4 shadow border-0">
+  <div class="card-body">
+
+    <div class="d-flex justify-content-between align-items-center mb-4 bg-dark text-white p-3 rounded shadow-sm"
+      *ngIf="prostor?.jedinice">
+      <button class="btn btn-outline-light btn-sm" (click)="promeniJedinicu(-1)" [disabled]="indeksUnit === 0">
+        <i class="bi bi-chevron-left"></i> Prethodna jedinica
+      </button>
+
+      <div class="text-center">
+        <h5 class="mb-0 text-warning">{{prostor.jedinice[indeksUnit]?.tip | uppercase}}</h5>
+        <small>Kapacitet: {{prostor.jedinice[indeksUnit]?.kapacitet}} osoba (ime jedinice:
+          {{prostor.jedinice[indeksUnit]?.naziv}})</small>
+      </div>
+
+      <button class="btn btn-outline-light btn-sm" (click)="promeniJedinicu(1)"
+        [disabled]="indeksUnit === prostor.jedinice.length - 1">
+        Sledeća jedinica <i class="bi bi-chevron-right"></i>
+      </button>
+    </div>
+
+    <h4 class="text-center mb-4">Raspored za tekuću nedelju</h4>
+
+    <div class="row g-2 text-center mb-4">
+      <div class="col" *ngFor="let dan of daniUNedelji">
+        <div class="p-2 border rounded"
+          [ngClass]="getZauzetiTermini(dan).length > 0 ? 'border-danger bg-light' : 'border-success bg-white'">
+          <div class="small fw-bold text-secondary">{{dan | date:'EEE'}}</div>
+          <div class="fw-bold">{{dan | date:'dd.MM'}}</div>
+          <hr class="my-1">
+
+          <div *ngFor="let termin of getZauzetiTermini(dan)" class="badge bg-danger d-block mb-1 shadow-sm">
+            <i class="bi bi-clock"></i> {{ termin }}
+          </div>
+
+          <div *ngIf="getZauzetiTermini(dan).length === 0" class="text-success small italic">
+            Slobodno
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row g-3 bg-light p-3 rounded border">
+      <div class="col-md-4">
+        <label class="form-label fw-bold">Datum:</label>
+        <input type="date" class="form-control" [(ngModel)]="izabraniDatum" [min]="danasDatum()">
+      </div>
+      <div class="col-md-3">
+        <label class="form-label fw-bold">Od:</label>
+        <input type="time" class="form-control" [(ngModel)]="vremeOd" step="60">
+      </div>
+      <div class="col-md-3">
+        <label class="form-label fw-bold">Do:</label>
+        <input type="time" class="form-control" [(ngModel)]="vremeDo" step="60">
+      </div>
+      <div class="col-md-2 d-flex align-items-end">
+        <button class="btn btn-success w-100 fw-bold" (click)="rezervisi()">Rezerviši</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="mt-5">
+  <h4>
+    Poslednjih 10 komentara za prostor {{prostor?.naziv}}
+  </h4>
+
+  <div *ngFor="let k of sviKomentari" class="p-3 mb-2 rounded" [ngClass]="{'moj-komentar':k.kor_ime === ulogovaniKorisnik, 'border':true}">
+    <div class="d-flex justify-content-between">
+      <strong>{{k.kor_ime}}</strong>
+      <small class="text-muted">{{k.datum | date:'dd.MM.yyyy HH:mm'}}</small>
+    </div>
+
+    <p class="mb-0">{{k.tekst}}</p>
+
+  </div>
+</div>
+
+<div class="mt-4 p-3 bg-light border rounded">
+  <textarea class="form-control" [(ngModel)]="noviKomentarTekst" placeholder="Osavite komentar..."></textarea>
+  <div class="mt-2">
+    <button class="btn btn-primary me-2" (click)="posaljiRecenziju('comment')">Objavi komentar</button>
+    <button class="btn btn-outline-success me-2" (click)="posaljiRecenziju('like')"><i class="bi bi-hand-thumbs-up"></i></button>
+    <button class="btn btn-outline-success me-2" (click)="posaljiRecenziju('dislike')"><i class="bi bi-hand-thumbs-down"></i></button>
+  </div>
+
+</div>
+

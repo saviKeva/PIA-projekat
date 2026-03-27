@@ -1,0 +1,26 @@
+/* Svi linkovi u navigaciji - da ne budu bledi */
+.navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.8) !important; /* Skoro skroz bela */
+    font-size: 1.1rem; /* Malo veći font za bolju čitljivost */
+    transition: all 0.2s ease-in-out;
+}
+
+/* Stil kada pređeš mišem preko linka (Hover) */
+.navbar-nav .nav-link:hover {
+    color: #ffffff !important;
+    transform: scale(1.05); /* Blago se poveća */
+}
+
+/* KLJUČNI DEO: Stil za aktivni (izabrani) link */
+.active-link {
+    color: #ffffff !important;      /* Puna bela boja */
+    font-weight: 900 !important;   /* Maksimalno boldovano */
+    border-bottom: 3px solid #fff; /* Dodaje liniju ispod za bolji efekat */
+    text-transform: uppercase;     /* Opciono: sva velika slova za aktivni link */
+}
+
+/* Dugme za odjavu - da bude uočljivije */
+.btn-outline-light {
+    font-weight: 600 !important;
+    border-width: 2px !important;
+}

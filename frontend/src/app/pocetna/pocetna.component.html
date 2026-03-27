@@ -1,0 +1,58 @@
+<div class="container mt-4">
+  <h2 class="text-center">Dobrodošli u Coworking mrežu</h2>
+
+  <div class="alert alert-info mt-3">
+    Ukupan broj registrovanih prostora: <strong>{{ prostori.length }}</strong>
+  </div>
+
+  <div class="mt-4">
+    <h4>TOP 5 najbolje ocenjenih prostora</h4>
+    <ul class="list-group">
+      <li *ngFor="let t of top5" class="list-group-item d-flex justify-content-between">
+        {{ t.naziv }} ({{ t.grad }})
+        <span class="badge bg-primary rounded-pill">{{ t.likes }} lajkova</span>
+      </li>
+    </ul>
+  </div>
+
+  <hr>
+
+  <div class="row g-3 mt-3 p-3 border rounded bg-light">
+    <div class="col-md-4">
+      <label>Pretraga po nazivu:</label>
+      <input type="text" class="form-control" [(ngModel)]="filterNaziv" (input)="pretrazi()">
+    </div>
+    <div class="col-md-4">
+      <label>Gradovi (Multi-select):</label>
+      <select class="form-control" multiple [(ngModel)]="selektovaniGradovi" (change)="pretrazi()">
+        <option *ngFor="let g of dostupniGradovi" [value]="g">{{ g }}</option>
+      </select>
+      <small class="text-muted">Držite Ctrl za višestruki izbor</small>
+    </div>
+  </div>
+
+  <div class="mt-4">
+    <table class="table table-hover table-bordered">
+      <thead class="table-dark">
+        <tr>
+          <th (click)="sortiraj('naziv')" style="cursor: pointer;">Naziv prostora ⇅</th>
+          <th (click)="sortiraj('grad')" style="cursor: pointer;">Grad ⇅</th>
+          <th>Akcija</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let p of filtriraniProstori">
+          <td>{{ p.naziv }}</td>
+          <td>{{ p.grad }}</td>
+          <td>
+            <button class="btn btn-info btn-sm" (click)="detalji(p)">DETALJI</button>
+          </td>
+        </tr>
+        <tr *ngIf="filtriraniProstori.length === 0">
+          <td colspan="3" class="text-center">Nema rezultata pretrage.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+

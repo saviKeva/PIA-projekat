@@ -1,0 +1,29 @@
+<div class="container mt-4 text-white bg-dark p-4 rounded">
+      <h2>Administratorski panel - Zahtevi</h2>
+      <hr class="bg-light">
+      <div *ngIf="zahtevi.length === 0" class="alert alert-info">Trenutno nema novih zahteva za registraciju.</div>
+
+      <table *ngIf="zahtevi.length > 0" class="table table-dark table-hover">
+        <thead>
+          <tr>
+            <th>Korisničko ime</th>
+            <th>Ime i prezime</th>
+            <th>E-mail</th>
+            <th>Tip</th>
+            <th>Akcije</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let z of zahtevi">
+            <td>{{ z.kor_ime }}</td>
+            <td>{{ z.ime }} {{ z.prezime }}</td>
+            <td>{{ z.mejl }}</td>
+            <td>{{ z.tip === 'menadzer' ? 'Menadžer' : 'Član mreže' }}</td>
+            <td>
+              <button class="btn btn-sm btn-success me-2" (click)="obradi(z.kor_ime, 'active')">Odobri</button>
+              <button class="btn btn-sm btn-danger" (click)="obradi(z.kor_ime, 'rejected')">Odbij</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>

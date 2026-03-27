@@ -1,0 +1,77 @@
+.navbar-custom {
+    /* Koristimo iste boje kao u tvom primeru za login-card */
+    background: linear-gradient(135deg, #0f0d00, #0f6d07);
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    margin: 0 !important;
+}
+
+/* Da bi linkovi bili beli i čitljivi na tamnijem gradijentu */
+.navbar-custom a,
+.navbar-custom .navbar-brand {
+    color: white !important;
+    font-weight: 500;
+    text-decoration: none;
+    transition: opacity 0.3s;
+}
+
+.navbar-custom a:hover {
+    opacity: 0.8;
+}
+
+.py-4 {
+  padding-top: 0.5rem !important;
+  padding-bottom: 0.5rem !important;
+}
+
+.mt-5 {
+  margin-top: 1.5rem !important;
+}
+
+/* Osiguraj da body i html zauzimaju punu visinu ekrana */
+
+/* Footer – guran na dno */
+footer {
+  flex-shrink: 0;             /* ne sme da se smanjuje */
+  width: 100%;
+  background: linear-gradient(to top, #0f0f1a, #1a1a2e);
+  color: #e0e0ff;
+  padding: 2rem 1rem;
+  text-align: center;
+  box-shadow: 0 -4px 15px rgba(0,0,0,0.5);
+}
+
+/* py - padding na y osi (vertikalno), velicina 4, 1rem = 16 px */
+/* mt - margin top ----> */
+/* !important - nije anotacija vec CSS prioritetni fleg, govori da je ova vrednost najvaznija cak i ako postoji
+neko pravilo vece specificnosti kasnije u kodu */
+
+
+
+
+
+.footer-custom {
+  flex-shrink: 0;
+  color: #e0e0ff;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 -4px 15px rgba(0,0,0,0.5);
+  height: fit-content;
+  padding: 0.8rem 0!important;
+
+}
+
+
+.site-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.mr-1 {
+  margin-right: 0!important;
+}

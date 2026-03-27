@@ -1,0 +1,68 @@
+<div class="container mt-4 text white bg-dark p-4 rounded">
+
+  <h2>Administratorski panel - lista korisnika </h2>
+
+  <hr class="bg-light table-responsive">
+  <div *ngIf="korisnici.length==0" class="alert alert-info">
+
+    Trenutno nema korisnika u bazi
+
+  </div>
+  <div class="table-responsive">
+    <table *ngIf="korisnici.length>0" class="table table-dark table-hover">
+
+    <thead>
+
+      <tr>
+
+        <th>Korisničko ime</th>
+
+        <th>Ime i prezime</th>
+
+        <th>E-mail</th>
+
+        <th>Tip</th>
+
+        <th>Akcija ?</th>
+
+      </tr>
+
+    </thead>
+
+
+
+    <tbody>
+
+      <tr *ngFor="let k of korisnici">
+
+        <td>{{k.kor_ime}}</td>
+
+        <td>{{k.ime}} {{k.prezime}}</td>
+
+        <td>{{k.mejl}}</td>
+
+        <td>{{k.tip === 'menadzer' ? 'Menadžer':'Član mreže'}}</td>
+
+        <td>
+
+          <button class="btn btn-sm btn-danger me-2" (click)="obradi(k.kor_ime,'active')">Obriši</button>
+
+          <button class="btn btn-sm btn-success" [routerLink]="['/admin/admin-updateUser', k.kor_ime]">
+
+            UREDI
+
+          </button>
+
+        </td>
+
+
+
+
+
+      </tr>
+
+    </tbody>
+
+  </table>
+  </div>
+

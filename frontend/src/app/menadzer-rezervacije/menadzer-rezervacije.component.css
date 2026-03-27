@@ -1,0 +1,45 @@
+
+.container {
+  margin-top: 100px !important;
+  position: relative;
+  z-index: 1;
+}
+
+
+h2 {
+  font-weight: 600 !important;
+  color: #083e2b !important;
+  border-color: #6aa4a1 !important;
+}
+
+
+.table-responsive {
+  background-color: rgb(221, 232, 229) !important;
+  border-radius: 8px !important;
+  /* padding: 15px; */
+  margin-top: 20px;
+  overflow-x: auto !important;
+  display: block;
+  width: 100%;
+}
+
+
+.table {
+  background-color: transparent !important;
+}
+
+
+.table thead th {
+  position: sticky !important;
+  top: 0 !important;
+  background-color: #6aa4a1 !important;
+  color: white !important;
+  z-index: 10 !important;
+}
+
+/* Stil za potvrđene redove */
+.potvrdjen-red {
+  text-decoration: line-through;
+  color: #777 !important;
+  background-color: rgba(0, 0, 0, 0.05) !important; /* Blago zatamnjenje */
+}

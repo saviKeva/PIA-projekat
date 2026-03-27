@@ -1,0 +1,28 @@
+<div class="site-wrapper" mr-1>
+  <!-- *ngIf="!ulogovan()" -->
+  <nav  class="navbar navbar-expand-lg navbar-dark bg-dark shadow mb-4">
+  <div class="container">
+    <a class="navbar-brand" routerLink="/">CoworkingMreža</a>
+    <div class="navbar-nav ms-auto">
+      <a class="nav-link" routerLink="/pocetna">Svi prostori</a>
+      <a class="nav-link btn btn-outline-warning ms-lg-3" routerLink="/login">Prijava</a>
+    </div>
+  </div>
+</nav>
+
+<main class="flex-grow-1">
+  <router-outlet></router-outlet>
+</main>
+
+<footer class="footer-custom mt-auto">
+    <div class="container-fluid text-center">
+      <p class="mb-1">&copy; 2026 Coworking Mreža. Sva prava zadržana.</p>
+      <p class="mb-0 small">
+        Kontakt: <a href="mailto:info@coworkingmreza.rs" class="text-warning text-decoration-none">info&#64;coworkingmreza.rs</a>
+      </p>
+    </div>
+  </footer>
+
+</div>
+
+

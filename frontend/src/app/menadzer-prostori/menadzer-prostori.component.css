@@ -1,0 +1,132 @@
+.container {
+    max-width: 900px;
+}
+
+.card {
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.card-header {
+    background: linear-gradient(135deg, #212529 0%, #343a40 100%);
+}
+
+.form-control {
+    border-radius: 8px;
+    padding: 0.6rem 0.75rem;
+    border: 1px solid #dee2e6;
+    transition: all 0.2s;
+}
+
+.form-control:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.15);
+}
+
+.btn-lg {
+    border-radius: 10px;
+}
+
+h4.text-primary {
+    font-weight: 700;
+    font-size: 1.15rem;
+    letter-spacing: 0.5px;
+}
+
+.x-small {
+    font-size: 0.75rem;
+}
+
+.bg-light {
+    background-color: #f8f9fa !important;
+}
+
+/* Animacija za nove redove */
+@keyframes slideIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.row.g-2, .card.border {
+    animation: slideIn 0.3s ease-out;
+}
+
+.upload-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #e0e0e0;
+}
+
+.card-header-custom {
+  background: #007bff;
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.card-header-custom h4 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.file-drop-area {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 25px;
+  border: 2px dashed #cbd5e0;
+  border-radius: 8px;
+  background-color: #f8fafc;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.file-drop-area:hover {
+  border-color: #007bff;
+  background-color: #f1f5f9;
+}
+
+.file-input {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.fake-btn {
+  flex-shrink: 0;
+  background-color: #edeff2;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  padding: 8px 15px;
+  margin-right: 10px;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.file-msg {
+  font-size: 14px;
+  color: #4a5568;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.btn-primary {
+  padding: 12px;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: transform 0.2s;
+}
+
+.btn-primary:active {
+  transform: scale(0.98);
+}

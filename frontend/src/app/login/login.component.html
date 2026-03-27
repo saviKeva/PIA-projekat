@@ -1,0 +1,49 @@
+<div class="login-wrapper d-flex align-items-center justify-content-center">
+  <div class="login-card card p-4 shadow">
+    <h2 class="text-center mb-4 text-white">Dobrodošli</h2>
+
+    <form (ngSubmit)="login()">
+      <div class="form-group mb-3">
+        <label for="kor_ime" class="text-white">Korisničko ime</label>
+        <input type="text" class="form-control" id="kor_ime" [(ngModel)]="kor_ime" name="kor_ime">
+      </div>
+
+      <div class="form-group mb-3">
+        <label for="lozinka" class="text-white">Lozinka</label>
+        <div class="input-group">
+          <input [type]="showPassword ? 'text' : 'password'" class="form-control" id="lozinka" [(ngModel)]="lozinka"
+            name="lozinka">
+          <button type="button" class="btn btn-outline-light" (click)="togglePasswordVisibility()">
+            {{ showPassword ? 'Sakrij' : 'Prikaži' }}
+          </button>
+        </div>
+      </div>
+
+      <div class="form-group mb-3" *ngIf="tip!=='admin'">
+        <label for="tip" class="text-white">Tip korisnika</label>
+        <select class="form-control" id="tip" [(ngModel)]="tip" name="tip">
+          <option value="menadzer" class="text-black">menadzer</option>
+          <option value="clanMreze" class="text-black">clan mreze</option>
+        </select>
+      </div>
+
+      <button type="submit" class="btn btn-light w-100">Prijavi se</button>
+
+      <p *ngIf="message" class="text-center mt-3" style="color: blanchedalmond; font-weight: bold;">
+      {{ message }}
+      </p>
+
+      <div class="mt-4 text-center" *ngIf="tip!=='admin'">
+        <p class="text-white">Nemate nalog?</p>
+        <button type="button" class="btn btn-outline-light" (click)="registrujSe()">Registrujte se</button>
+      </div>
+    </form>
+
+    <!-- Zaboravljena lozinka -->
+    <div class="mt-3 text-center">
+    <a routerLink="/forgot-password" class="text-info">Zaboravili ste lozinku?</a>
+    </div>
+
+  </div>
+</div>
+

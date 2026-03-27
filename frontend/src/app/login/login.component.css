@@ -1,0 +1,19 @@
+.login-wrapper {
+  height: 80vh;
+  background: white;
+}
+
+
+.login-card {
+  width: 100%;
+  max-width: 400px;
+  background: linear-gradient(135deg, #2fd0c0, #132d7d); /* preliv unutar forme */
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+a[routerLink] {
+  cursor: pointer;
+  text-decoration: underline;
+}

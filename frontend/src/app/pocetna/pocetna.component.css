@@ -1,0 +1,8 @@
+.footer-custom {
+  flex-shrink: 0; /* Ne dozvoljava futeru da se "spljeska" */
+  background: linear-gradient(to top, #0f0f1a, #1a1a2e) !important;
+  color: #e0e0ff;
+  padding: 1.5rem 0;
+  width: 100%;
+  height:fit-content;
+}

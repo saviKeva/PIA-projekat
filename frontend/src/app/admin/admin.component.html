@@ -1,0 +1,42 @@
+<nav class="navbar fixed-top navbar-dark" style="background-color: #283028;">
+  <div class="container-fluid">
+    <a class="navbar-brand font-weight-bold">Coworking Hub</a>
+
+    <div class="d-flex align-items-center ms-auto">
+
+      <button class="btn btn-outline-light btn-sm me-2" (click)="logout()">
+        Odjavi se
+      </button>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#glavniMeni1">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+
+    <div class="collapse navbar-collapse" id="glavniMeni1">
+      <div class="navbar-nav">
+        <a class="nav-link" routerLink="/admin/admin-users" routerLinkActive="active-link">
+          <i class="bi bi-person"></i> Kontrola korisnika
+        </a>
+
+        <a class="nav-link" routerLink="/admin/admin-allUsers" routerLinkActive="active-link">
+          <i class="bi bi-person"></i> Brisanje korisnika
+        </a>
+
+        <a class="nav-link" routerLink="/admin/admin-prostori" routerLinkActive="active-link">
+          <i class="bi bi-search"></i> Kontrola prostora
+        </a>
+
+        <a class="nav-link" routerLink="/admin/admin-statistika" routerLinkActive="active-link">
+          <i class="bi bi-search"></i> Statistički podaci
+        </a>
+
+      </div>
+    </div>
+  </div>
+</nav>
+
+<div class="container" style="margin-top: 100px;">
+  <h2 class="text-center" *ngIf="router.url === '/admin'">Dobro došli, {{user.kor_ime}}</h2>
+  <router-outlet></router-outlet>
+</div>

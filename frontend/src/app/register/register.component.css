@@ -1,0 +1,57 @@
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+/* wrapper koji  prikazuje karticu */
+.register-wrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* forme */
+.register-card {
+  width: 100%;
+  max-width: 400px;
+  max-height: 90vh; /* ograniči visinu da ne prelazi ekran */
+  overflow-y: auto; /* omogući skrolovanje ako je forma dugačka */
+  /* background: rgba(0, 0, 0, 0.4); */
+  background: linear-gradient(135deg,  #219d91, #132d7d);
+  border-radius: 10px;
+  padding: 20px;
+  color: white;
+}
+
+/* input polja */
+.form-control {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  border: 1px solid #ccc;
+}
+
+.form-control::placeholder {
+  color: #ddd;
+}
+
+/* Label tekst */
+label {
+  color: white;
+}
+
+/* Dugme */
+button[type="submit"] {
+  background-color: #ffffff;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Responsive za male ekrane */
+@media (max-height: 600px) {
+  .register-card {
+    max-height: 80vh;
+  }
+}

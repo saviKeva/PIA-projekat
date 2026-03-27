@@ -1,0 +1,27 @@
+<div class="container">
+  <h2>Menadžer - interaktivni kalendar</h2>
+
+  <!-- Dropdown biranje prostora -->
+  <label>Izaberi prostor:</label>
+  <select [(ngModel)]="izabraniProstor" (change)="onProstorSelect()">
+    <option [ngValue]="null">** Izaberi **</option>
+    <option *ngFor="let p of prostori" [ngValue]="p">
+      {{p.naziv}} ({{p.grad}})
+    </option>
+  </select>
+
+  <br> <br>
+
+  <!-- Dropdown za jedinicu -->
+  <label>Izaberi jedinicu:</label>
+  <select [(ngModel)]="izabranaJedinica" (change)="onJedinicaSelect()">
+    <option [ngValue]="null">** Sve jedinice **</option>
+    <option *ngFor="let j of jedinice" [ngValue]="j">
+      {{j.naziv}} {{j.tip}}
+    </option>
+  </select>
+
+  <br> <br>
+
+  <full-calendar [options]="calendarOptions"></full-calendar>
+</div>

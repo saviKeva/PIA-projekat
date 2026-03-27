@@ -1,0 +1,121 @@
+
+
+***BACKEND BIBLIOTEKE (Node.js)***
+Express (Server framework)
+
+Link: https://www.npmjs.com/package/express
+
+Instalacija: npm install express
+
+Mongoose (Baza podataka - MongoDB)
+
+Link: https://www.npmjs.com/package/mongoose
+
+Instalacija: npm install mongoose
+
+Bcryptjs (Kriptovanje lozinki)
+
+Link: https://www.npmjs.com/package/bcryptjs
+
+Instalacija: npm install bcryptjs
+
+JSON Web Token (Autentifikacija)
+
+Link: https://www.npmjs.com/package/jsonwebtoken
+
+Instalacija: npm install jsonwebtoken
+
+Nodemailer (Slanje mejlova)
+
+Link: https://www.npmjs.com/package/nodemailer
+
+Instalacija: npm install nodemailer
+
+Sharp (Obrada slika)
+
+Link: https://www.npmjs.com/package/sharp
+
+Instalacija: npm install sharp
+
+Multer (Rad sa upload-ovanjem fajlova/slika) – https://www.npmjs.com/package/multer
+
+Dotenv (Upravljanje .env promenljivama) – https://www.npmjs.com/package/dotenv
+
+Node-geocoder (Geokodiranje adresa/koordinata) – https://www.npmjs.com/package/node-geocoder
+
+FullCalendar (Biblioteke za prikaz kalendara) –Angular integracija (uputstvo): https://fullcalendar.io/docs/angular
+
+											NPM stranica (glavni paket): https://www.npmjs.com/package/@fullcalendar/angular
+
+npm install @fullcalendar/angular @fullcalendar/daygrid @fullcalendar/timegrid @fullcalendar/interaction
+
+***FRONTEND BIBLIOTEKE (Angular)***
+FullCalendar Angular (Glavni modul za kalendar)
+
+Link: https://www.npmjs.com/package/@fullcalendar/angular
+
+Instalacija: npm install @fullcalendar/angular @fullcalendar/daygrid @fullcalendar/timegrid @fullcalendar/interaction
+
+Leaflet (Mape i geolokacija)
+
+Link: https://www.npmjs.com/package/leaflet
+
+Instalacija: npm install leaflet
+
+jsPDF (Generisanje PDF-a)
+
+Link: https://www.npmjs.com/package/jspdf
+
+Instalacija: npm install jspdf jspdf-autotable
+
+Bootstrap (Stilizacija i komponente)
+
+Link: https://www.npmjs.com/package/bootstrap
+
+Instalacija: npm install bootstrap bootstrap-icons
+
+Bootstrap ikonice:
+npm install bootstrap bootstrap-icons @fortawesome/fontawesome-free
+
+Charts:
+npm install chart.js ng2-charts
+npm install chart.js ng2-charts --legacy-peer-deps
+
+Ako nesto nece da radi i baca errore:
+npm install --legacy-peer-deps
+
+//brzi upiti za mongo bazu
+db.reservations.find({
+    od: {
+        $gte: new Date("2026-03-02T00:00:00Z"),
+        $lte: new Date("2026-03-08T23:59:59Z")
+    }
+}).forEach(function(doc) {
+    let stariOd = new Date(doc.od);
+    let stariDo = new Date(doc.do);
+
+    // Pomera datum za 7 dana
+    stariOd.setDate(stariOd.getDate() + 7);
+    stariDo.setDate(stariDo.getDate() + 7);
+
+    db.reservations.updateOne(
+        { _id: doc._id },
+        {
+            $set: {
+                od: stariOd,
+                do: stariDo,
+                status: "kreirana"
+            }
+        }
+    );
+});
+
+db.reservations.updateMany(
+    { 
+      od: { $lt: new Date() }, 
+      status: "kreirana" 
+    },
+    { 
+      $set: { status: "potvrdjena" } 
+    }
+);

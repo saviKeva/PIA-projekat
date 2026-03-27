@@ -1,0 +1,72 @@
+<div class="register-wrapper d-flex flex-grow-1 align-items-center justify-content-center">
+  <div class="register-card card p-4 shadow">
+    <h2 class="text-center mb-4 text-white">Registracija</h2>
+
+    <form (ngSubmit)="register()">
+      <div class="form-group mb-3" *ngFor="let field of ['kor_ime','lozinka','ime','prezime','adresa']">
+        <label [for]="field" class="text-white">{{ field }}</label>
+        <input type="text" class="form-control" [id]="field" [(ngModel)]="userData[field]" [name]="field">
+      </div>
+
+
+      <div class="form-group mb-3">
+        <label for="tel" class="text-white">Telefon</label>
+        <input type="text" class="form-control" id="tel" [(ngModel)]="userData.tel" name="tel">
+        <small *ngIf="userData.tel && !isPhoneValid()" class="text-warning">Telefon mora biti u formatu: 06xxxxxxxxx ili +3816xxxxxxxx</small>
+      </div>
+
+      <div class="form-group mb-3">
+        <label for="mejl" class="text-white">Mejl</label>
+        <input type="email" class="form-control" id="mejl" [(ngModel)]="userData.mejl" name="mejl">
+        <small *ngIf="userData.mejl && !isEmailValid()" class="text-warning">Mejl mora biti u obliku nesto&#64;servis.com</small>
+      </div>
+
+      <div class="form-group mb-3">
+        <label class="text-white">Pol:</label><br>
+        <input type="radio" [(ngModel)]="userData.pol" name="pol" value="M"> M
+        <input type="radio" [(ngModel)]="userData.pol" name="pol" value="Ž"> Ž
+      </div>
+
+      <div class="form-group mb-3">
+        <label for="tip">Tip korisnika</label>
+        <select class="form-control" id="tip" [(ngModel)]="userData.tip" name="tip">
+          <option value="menadzer" class="text-black">Menadžer</option>
+          <option value="clanMreze" class="text-black">Član mreže</option>
+        </select>
+      </div>
+
+      <div *ngIf="userData.tip === 'menadzer'">
+        <input type="text" class="form-control mb-2" placeholder="Naziv firme" [(ngModel)]="userData.firmaNaziv" name="fNaziv">
+        <input type="text" class="form-control mb-2" placeholder="Adresa sedišta" [(ngModel)]="userData.adresaSedista" name="aSed">
+        <input type="text" class="form-control mb-2" placeholder="Matični broj (8 cifara)" [(ngModel)]="userData.maticniBroj" name="mBroj">
+        <small *ngIf="userData.maticniBroj && !isMaticniBrojValid()" class="text-warning">Maticni broj mora imati tacno 8 cifara!</small>
+
+        <input type="text" class="form-control mb-2" placeholder="PIB (9 cifara ne sme poceti 0)" [(ngModel)]="userData.pib" name="pib">
+        <small *ngIf="userData.pib && !isPibValid()" class="text-warning d-block mb-2">PIB mora imati 9 cifara i ne sme poceti 0!</small>
+      </div>
+
+
+      <div class="form-group mb-3">
+        <label for="slika" class="text-white">Slika</label>
+        <input type="file" class="form-control" id="slika" (change)="onFileSelected($event)">
+        <div *ngIf="fileError" class="text-warning mt-2">{{ fileError }}</div>
+      </div>
+
+      <div *ngIf="imagePreview" class="mb-3 text-center">
+        <img [src]="imagePreview" alt="Preview" class="img-fluid rounded" style="max-height: 200px;">
+      </div>
+
+      <div class="progress mb-3" *ngIf="uploadProgress > 0">
+        <div class="progress-bar" role="progressbar" [style.width.%]="uploadProgress" aria-valuemin="0" aria-valuemax="100">
+          {{ uploadProgress }}%
+        </div>
+      </div>
+
+      <button type="submit"
+        class="btn btn-light w-100"
+        [disabled]="isFormInvalid()">
+        Registruj se
+      </button>
+    </form>
+  </div>
+</div>

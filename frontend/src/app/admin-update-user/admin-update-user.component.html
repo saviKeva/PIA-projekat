@@ -1,0 +1,195 @@
+<div class="container mt-4">
+  <h2 class="text-center">Podaci o korisniku: {{kor_ime}}</h2>
+
+  <div class="mt-4" *ngIf="user">
+    <table class="table table-hover table-bordered shadow-sm">
+      <thead class="table-dark">
+        <tr>
+          <th style="width: 20%;">Tip podatka</th>
+          <th style="width: 25%;">Trenutna vrednost</th>
+          <th style="width: 35%;">Unesi izmene</th>
+          <th style="width: 20%;">Akcija</th>
+        </tr>
+      </thead>
+      <tbody>
+
+        <tr>
+          <td>Ime</td>
+          <td>{{user.ime}}</td>
+          <td>
+            <input type="text" [(ngModel)]="user.ime" class="form-control" [class.is-invalid]="errors['ime']">
+            <div class="text-danger small" *ngIf="errors['ime']">{{errors['ime']}}</div>
+          </td>
+          <td>
+            <button class="btn btn-warning w-100" (click)="izmeni(user.ime,'ime')">Sačuvaj izmenu</button>
+          </td>
+        </tr>
+
+        <tr>
+          <td>Prezime</td>
+          <td>{{user.prezime}}</td>
+          <td>
+            <input type="text" [(ngModel)]="user.prezime" class="form-control" [class.is-invalid]="errors['prezime']">
+            <div class="text-danger small" *ngIf="errors['prezime']">{{errors['prezime']}}</div>
+          </td>
+          <td>
+            <button class="btn btn-warning w-100" (click)="izmeni(user.prezime,'prezime')">Sačuvaj izmenu</button>
+          </td>
+        </tr>
+
+        <tr>
+          <td>Pol</td>
+          <td>{{user.pol}}</td>
+          <td>
+            <select [(ngModel)]="user.pol" class="form-control" [class.is-invalid]="errors['pol']">
+              <option value="M">Muški</option>
+              <option value="Ž">Ženski</option>
+            </select>
+            <div class="text-danger small" *ngIf="errors['pol']">{{errors['pol']}}</div>
+          </td>
+          <td>
+            <button class="btn btn-warning w-100" (click)="izmeni(user.pol,'pol')">Sačuvaj izmenu</button>
+          </td>
+        </tr>
+
+        <tr>
+          <td>Adresa</td>
+          <td>{{user.adresa}}</td>
+          <td>
+            <input type="text" [(ngModel)]="user.adresa" class="form-control" [class.is-invalid]="errors['adresa']">
+            <div class="text-danger small" *ngIf="errors['adresa']">{{errors['adresa']}}</div>
+          </td>
+          <td>
+            <button class="btn btn-warning w-100" (click)="izmeni(user.adresa,'adresa')">Sačuvaj izmenu</button>
+          </td>
+        </tr>
+
+        <tr>
+          <td>Telefon</td>
+          <td>{{user.tel}}</td>
+          <td>
+            <input type="text" [(ngModel)]="user.tel" class="form-control" [class.is-invalid]="errors['tel']">
+            <div class="text-danger small" *ngIf="errors['tel']">{{errors['tel']}}</div>
+            <small *ngIf="user.tel && !isPhoneValid()" class="text-warning">Mora poceti sa +3816...(13 cifara) ili sa 06...(10 cifara)</small>
+          </td>
+          <td>
+            <button class="btn btn-warning w-100" (click)="izmeni(user.tel,'tel')">Sačuvaj izmenu</button>
+          </td>
+        </tr>
+
+        <tr>
+          <td>Email</td>
+          <td>{{user.mejl}}</td>
+          <td>
+            <input type="email" [(ngModel)]="user.mejl" class="form-control" [class.is-invalid]="errors['mejl']">
+            <div class="text-danger small" *ngIf="errors['mejl']">{{errors['mejl']}}</div>
+            <small *ngIf="user.mejl && !isEmailValid()" class="text-warning">Unesite ispravnu email adresu.</small>
+          </td>
+          <td>
+            <button class="btn btn-warning w-100" (click)="izmeni(user.mejl,'mejl')">Sačuvaj izmenu</button>
+          </td>
+        </tr>
+
+        <tr class="table-info">
+          <td>Promena Lozinke</td>
+          <td><em>Poverljivo</em></td>
+          <td>
+            <input type="password" [(ngModel)]="staraLozinka" placeholder="Stara lozinka" class="form-control mb-2">
+
+            <div class="input-group">
+              <input [type]="showPassword ? 'text' : 'password'" [(ngModel)]="novaLozinka" placeholder="Nova lozinka"
+                class="form-control" [class.is-invalid]="errors['lozinka']">
+
+              <button class="btn btn-outline-secondary" type="button" (click)="showPassword = !showPassword">
+                {{ showPassword ? 'Sakrij' : 'Prikaži' }}
+              </button>
+            </div>
+            <div class="text-danger small" *ngIf="errors['lozinka']">{{errors['lozinka']}}</div>
+          </td>
+          <td>
+            <button class="btn btn-primary w-100" (click)="promeniLozinku()">Potvrdi novu lozinku</button>
+          </td>
+        </tr>
+
+        <tr>
+          <td>Profilna slika</td>
+          <td class="text-center">
+            <img [src]="'http://localhost:4000/' + user.slika" class="rounded-circle border"
+              style="width: 80px; height: 80px; object-fit: cover;">
+          </td>
+          <td>
+            <input type="file" (change)="onFileSelected($event)" accept="image/*" class="form-control">
+          </td>
+          <td>
+            <button class="btn btn-primary w-100" (click)="promeniSliku()">Ažuriraj sliku</button>
+          </td>
+        </tr>
+
+        <ng-container *ngIf="user.tip=='menadzer'">
+          <tr>
+            <td>Naziv firme</td>
+            <td>{{user.firmaNaziv}}</td>
+            <td>
+              <input type="text" [(ngModel)]="user.firmaNaziv" class="form-control"
+                [class.is-invalid]="errors['firmaNaziv']">
+              <div class="text-danger small" *ngIf="errors['firmaNaziv']">{{errors['firmaNaziv']}}</div>
+            </td>
+            <td>
+              <button class="btn btn-warning w-100" (click)="izmeni(user.firmaNaziv,'firmaNaziv')">Sačuvaj</button>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Adresa sedišta</td>
+            <td>{{user.adresaSedista}}</td>
+            <td>
+              <input type="text" [(ngModel)]="user.adresaSedista" class="form-control"
+                [class.is-invalid]="errors['adresaSedista']">
+              <div class="text-danger small" *ngIf="errors['adresaSedista']">{{errors['adresaSedista']}}</div>
+            </td>
+            <td>
+              <button class="btn btn-warning w-100"
+                (click)="izmeni(user.adresaSedista,'adresaSedista')">Sačuvaj</button>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Matični broj</td>
+            <td>{{user.maticniBroj}}</td>
+            <td>
+              <input type="text" [(ngModel)]="user.maticniBroj" class="form-control"
+                [class.is-invalid]="errors['maticniBroj']">
+              <div class="text-danger small" *ngIf="errors['maticniBroj']">{{errors['maticniBroj']}}</div>
+              <small *ngIf="user.maticniBroj && !isMaticniBrojValid()" class="text-warning">Obazvezno: 8 cifara!</small>
+            </td>
+            <td>
+              <button class="btn btn-warning w-100" (click)="izmeni(user.maticniBroj,'maticniBroj')">Sačuvaj</button>
+            </td>
+          </tr>
+
+          <tr>
+            <td>PIB</td>
+            <td>{{user.pib}}</td>
+            <td>
+              <input type="text" [(ngModel)]="user.pib" class="form-control" [class.is-invalid]="errors['pib']">
+              <div class="text-danger small" *ngIf="errors['pib']">{{errors['pib']}}</div>
+              <small *ngIf="user.maticniBroj && !isPibValid()" class="text-warning">Obavezno: 9 cifara i da ne pocinje 0!</small>
+            </td>
+            <td>
+              <button class="btn btn-warning w-100" (click)="izmeni(user.pib,'pib')">Sačuvaj</button>
+            </td>
+          </tr>
+        </ng-container>
+
+      </tbody>
+    </table>
+
+
+  </div>
+  <div>
+    <button class="btn btn-secondary" routerLink="/admin/admin-allUsers">
+      Nazad na listu
+    </button>
+  </div>
+
+</div>

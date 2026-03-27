@@ -1,0 +1,1494 @@
+[{
+  "_id": {
+    "$oid": "69b0a187290c4ece32ea08aa"
+  },
+  "kor_ime": "andja",
+  "prostor_id": "69aaa1f0e9f560fa8689c31d",
+  "jedinica_id": "j1",
+  "naziv": "Sto 1",
+  "nazivProstora": "Impact Hub",
+  "grad": "Beograd",
+  "status": "potvrdjena",
+  "od": {
+    "$date": "2026-03-02T09:00:00.000Z"
+  },
+  "do": {
+    "$date": "2026-03-02T13:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69b0a187290c4ece32ea08ab"
+  },
+  "kor_ime": "paja",
+  "prostor_id": "69aaa1f0e9f560fa8689c31d",
+  "jedinica_id": "j1_2",
+  "naziv": "Sto 2",
+  "nazivProstora": "Impact Hub",
+  "grad": "Beograd",
+  "status": "potvrdjena",
+  "od": {
+    "$date": "2026-03-02T10:00:00.000Z"
+  },
+  "do": {
+    "$date": "2026-03-02T14:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69b0a187290c4ece32ea08ac"
+  },
+  "kor_ime": "marina",
+  "prostor_id": "69aaa1f0e9f560fa8689c31e",
+  "jedinica_id": "j5",
+  "naziv": "Sto 1",
+  "nazivProstora": "In Centar",
+  "grad": "Beograd",
+  "status": "potvrdjena",
+  "od": {
+    "$date": "2026-03-03T08:00:00.000Z"
+  },
+  "do": {
+    "$date": "2026-03-03T16:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69b0a187290c4ece32ea08ad"
+  },
+  "kor_ime": "djole",
+  "prostor_id": "69aaa1f0e9f560fa8689c31e",
+  "jedinica_id": "j5_2",
+  "naziv": "Sto 2",
+  "nazivProstora": "In Centar",
+  "grad": "Beograd",
+  "status": "potvrdjena",
+  "od": {
+    "$date": "2026-03-03T09:00:00.000Z"
+  },
+  "do": {
+    "$date": "2026-03-03T15:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69b0a187290c4ece32ea08ae"
+  },
+  "kor_ime": "tanja",
+  "prostor_id": "69aaa1f0e9f560fa8689c31f",
+  "jedinica_id": "j9",
+  "naziv": "Sala 1",
+  "nazivProstora": "Smart Office",
+  "grad": "Beograd",
+  "status": "potvrdjena",
+  "od": {
+    "$date": "2026-03-21T10:00:00.000Z"
+  },
+  "do": {
+    "$date": "2026-03-21T14:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69b0a187290c4ece32ea08af"
+  },
+  "kor_ime": "velja",
+  "prostor_id": "69aaa1f0e9f560fa8689c31f",
+  "jedinica_id": "j9_2",
+  "naziv": "Sala 2",
+  "nazivProstora": "Smart Office",
+  "grad": "Beograd",
+  "status": "potvrdjena",
+  "od": {
+    "$date": "2026-03-04T11:00:00.000Z"
+  },
+  "do": {
+    "$date": "2026-03-04T15:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69b0a187290c4ece32ea08b0"
+  },
+  "kor_ime": "andja",
+  "prostor_id": "69aaa1f0e9f560fa8689c320",
+  "jedinica_id": "j11_s",
+  "naziv": "Sala 1",
+  "nazivProstora": "Startit Centar",
+  "grad": "Beograd",
+  "status": "potvrdjena",
+  "od": {
+    "$date": "2026-03-05T09:00:00.000Z"
+  },
+  "do": {
+    "$date": "2026-03-05T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69b0a187290c4ece32ea08b1"
+  },
+  "kor_ime": "paja",
+  "prostor_id": "69aaa1f0e9f560fa8689c321",
+  "jedinica_id": "j13",
+  "naziv": "Kancelarija 1",
+  "nazivProstora": "Mokrin House",
+  "grad": "Mokrin",
+  "status": "potvrdjena",
+  "od": {
+    "$date": "2026-03-06T08:00:00.000Z"
+  },
+  "do": {
+    "$date": "2026-03-06T12:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69b0a187290c4ece32ea08b2"
+  },
+  "kor_ime": "djole",
+  "prostor_id": "69aaa1f0e9f560fa8689c321",
+  "jedinica_id": "j13_2",
+  "naziv": "Kancelarija 2",
+  "nazivProstora": "Mokrin House",
+  "grad": "Mokrin",
+  "status": "potvrdjena",
+  "od": {
+    "$date": "2026-03-06T09:00:00.000Z"
+  },
+  "do": {
+    "$date": "2026-03-06T13:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69b0a187290c4ece32ea08b4"
+  },
+  "kor_ime": "velja",
+  "prostor_id": "69aaa1f0e9f560fa8689c323",
+  "jedinica_id": "j17",
+  "naziv": "Kancelarija 1",
+  "nazivProstora": "Think Inovative",
+  "grad": "Niš",
+  "status": "potvrdjena",
+  "od": {
+    "$date": "2026-03-08T09:00:00.000Z"
+  },
+  "do": {
+    "$date": "2026-03-08T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69b0a187290c4ece32ea08b5"
+  },
+  "kor_ime": "tanja",
+  "prostor_id": "69aaa1f0e9f560fa8689c324",
+  "jedinica_id": "j19",
+  "naziv": "Sala 1",
+  "nazivProstora": "Hub8",
+  "grad": "Beograd",
+  "status": "potvrdjena",
+  "od": {
+    "$date": "2026-03-18T10:00:00.000Z"
+  },
+  "do": {
+    "$date": "2026-03-18T15:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69b0a187290c4ece32ea08b6"
+  },
+  "kor_ime": "andja",
+  "prostor_id": "69aaa1f0e9f560fa8689c31d",
+  "jedinica_id": "j3",
+  "naziv": "Sala 1",
+  "nazivProstora": "Impact Hub",
+  "grad": "Beograd",
+  "status": "kreirana",
+  "od": {
+    "$date": "2026-03-23T09:00:00.000Z"
+  },
+  "do": {
+    "$date": "2026-03-23T12:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69b0a187290c4ece32ea08b7"
+  },
+  "kor_ime": "marina",
+  "prostor_id": "69aaa1f0e9f560fa8689c31d",
+  "jedinica_id": "j3_2",
+  "naziv": "Sala 2",
+  "nazivProstora": "Impact Hub",
+  "grad": "Beograd",
+  "status": "potvrdjena",
+  "od": {
+    "$date": "2026-03-10T10:00:00.000Z"
+  },
+  "do": {
+    "$date": "2026-03-10T13:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69b0a187290c4ece32ea08b8"
+  },
+  "kor_ime": "paja",
+  "prostor_id": "69aaa1f0e9f560fa8689c31e",
+  "jedinica_id": "j6",
+  "naziv": "Kancelarija 1",
+  "nazivProstora": "In Centar",
+  "grad": "Beograd",
+  "status": "kreirana",
+  "od": {
+    "$date": "2026-03-24T09:00:00.000Z"
+  },
+  "do": {
+    "$date": "2026-03-24T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69b0a187290c4ece32ea08b9"
+  },
+  "kor_ime": "djole",
+  "prostor_id": "69aaa1f0e9f560fa8689c31e",
+  "jedinica_id": "j6_2",
+  "naziv": "Kancelarija 2",
+  "nazivProstora": "In Centar",
+  "grad": "Beograd",
+  "status": "kreirana",
+  "od": {
+    "$date": "2026-03-24T11:00:00.000Z"
+  },
+  "do": {
+    "$date": "2026-03-24T15:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69b0a187290c4ece32ea08ba"
+  },
+  "kor_ime": "velja",
+  "prostor_id": "69aaa1f0e9f560fa8689c31f",
+  "jedinica_id": "j4",
+  "naziv": "Sto 1",
+  "nazivProstora": "Smart Office",
+  "grad": "Beograd",
+  "status": "kreirana",
+  "od": {
+    "$date": "2026-03-25T08:00:00.000Z"
+  },
+  "do": {
+    "$date": "2026-03-25T12:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69b0a187290c4ece32ea08bb"
+  },
+  "kor_ime": "tanja",
+  "prostor_id": "69aaa1f0e9f560fa8689c31f",
+  "jedinica_id": "j4_2",
+  "naziv": "Sto 2",
+  "nazivProstora": "Smart Office",
+  "grad": "Beograd",
+  "status": "kreirana",
+  "od": {
+    "$date": "2026-03-25T09:00:00.000Z"
+  },
+  "do": {
+    "$date": "2026-03-25T13:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69b0a187290c4ece32ea08bc"
+  },
+  "kor_ime": "andja",
+  "prostor_id": "69aaa1f0e9f560fa8689c320",
+  "jedinica_id": "j11",
+  "naziv": "Kancelarija 1",
+  "nazivProstora": "Startit Centar",
+  "grad": "Beograd",
+  "status": "kreirana",
+  "od": {
+    "$date": "2026-03-26T10:00:00.000Z"
+  },
+  "do": {
+    "$date": "2026-03-26T14:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69b0a187290c4ece32ea08bd"
+  },
+  "kor_ime": "marina",
+  "prostor_id": "69aaa1f0e9f560fa8689c320",
+  "jedinica_id": "j11_2",
+  "naziv": "Kancelarija 2",
+  "nazivProstora": "Startit Centar",
+  "grad": "Beograd",
+  "status": "kreirana",
+  "od": {
+    "$date": "2026-03-26T11:00:00.000Z"
+  },
+  "do": {
+    "$date": "2026-03-26T15:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69b0a187290c4ece32ea08be"
+  },
+  "kor_ime": "paja",
+  "prostor_id": "69aaa1f0e9f560fa8689c321",
+  "jedinica_id": "j13_s",
+  "naziv": "Sala 1",
+  "nazivProstora": "Mokrin House",
+  "grad": "Mokrin",
+  "status": "kreirana",
+  "od": {
+    "$date": "2026-03-29T10:00:00.000Z"
+  },
+  "do": {
+    "$date": "2026-03-29T15:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69b0a187290c4ece32ea08bf"
+  },
+  "kor_ime": "djole",
+  "prostor_id": "69aaa1f0e9f560fa8689c321",
+  "jedinica_id": "j13_s2",
+  "naziv": "Sala 2",
+  "nazivProstora": "Mokrin House",
+  "grad": "Mokrin",
+  "status": "kreirana",
+  "od": {
+    "$date": "2026-03-29T10:00:00.000Z"
+  },
+  "do": {
+    "$date": "2026-03-29T14:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69b0a187290c4ece32ea08c0"
+  },
+  "kor_ime": "velja",
+  "prostor_id": "69aaa1f0e9f560fa8689c322",
+  "jedinica_id": "j15",
+  "naziv": "Sto 1",
+  "nazivProstora": "Deli prostor",
+  "grad": "Niš",
+  "status": "kreirana",
+  "od": {
+    "$date": "2026-03-30T09:00:00.000Z"
+  },
+  "do": {
+    "$date": "2026-03-30T13:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69b0a187290c4ece32ea08c1"
+  },
+  "kor_ime": "tanja",
+  "prostor_id": "69aaa1f0e9f560fa8689c322",
+  "jedinica_id": "j15_2",
+  "naziv": "Sala 2",
+  "nazivProstora": "Deli prostor",
+  "grad": "Niš",
+  "status": "kreirana",
+  "od": {
+    "$date": "2026-03-30T11:00:00.000Z"
+  },
+  "do": {
+    "$date": "2026-03-30T15:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69b0a187290c4ece32ea08c2"
+  },
+  "kor_ime": "andja",
+  "prostor_id": "69aaa1f0e9f560fa8689c323",
+  "jedinica_id": "j16",
+  "naziv": "Sto 1",
+  "nazivProstora": "Think Inovative",
+  "grad": "Niš",
+  "status": "kreirana",
+  "od": {
+    "$date": "2026-03-31T08:00:00.000Z"
+  },
+  "do": {
+    "$date": "2026-03-31T16:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69b0a187290c4ece32ea08c3"
+  },
+  "kor_ime": "marina",
+  "prostor_id": "69aaa1f0e9f560fa8689c323",
+  "jedinica_id": "j16_2",
+  "naziv": "Sto 2",
+  "nazivProstora": "Think Inovative",
+  "grad": "Niš",
+  "status": "kreirana",
+  "od": {
+    "$date": "2026-03-31T09:00:00.000Z"
+  },
+  "do": {
+    "$date": "2026-03-31T13:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69b0a187290c4ece32ea08c4"
+  },
+  "kor_ime": "paja",
+  "prostor_id": "69aaa1f0e9f560fa8689c324",
+  "jedinica_id": "j18",
+  "naziv": "Sto 1",
+  "nazivProstora": "Hub8",
+  "grad": "Beograd",
+  "status": "kreirana",
+  "od": {
+    "$date": "2026-04-01T07:00:00.000Z"
+  },
+  "do": {
+    "$date": "2026-04-01T11:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69b0a187290c4ece32ea08c5"
+  },
+  "kor_ime": "djole",
+  "prostor_id": "69aaa1f0e9f560fa8689c324",
+  "jedinica_id": "j18_2",
+  "naziv": "Sto 2",
+  "nazivProstora": "Hub8",
+  "grad": "Beograd",
+  "status": "kreirana",
+  "od": {
+    "$date": "2026-04-01T08:00:00.000Z"
+  },
+  "do": {
+    "$date": "2026-04-01T12:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69b0a187290c4ece32ea08c6"
+  },
+  "kor_ime": "velja",
+  "prostor_id": "69aaa1f0e9f560fa8689c325",
+  "jedinica_id": "j21",
+  "naziv": "Sala 1",
+  "nazivProstora": "Kreativni Poligon",
+  "grad": "Beograd",
+  "status": "kreirana",
+  "od": {
+    "$date": "2026-04-02T09:00:00.000Z"
+  },
+  "do": {
+    "$date": "2026-04-02T13:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69b0a187290c4ece32ea08c7"
+  },
+  "kor_ime": "tanja",
+  "prostor_id": "69aaa1f0e9f560fa8689c325",
+  "jedinica_id": "j21_2",
+  "naziv": "Sala 2",
+  "nazivProstora": "Kreativni Poligon",
+  "grad": "Beograd",
+  "status": "kreirana",
+  "od": {
+    "$date": "2026-04-02T10:00:00.000Z"
+  },
+  "do": {
+    "$date": "2026-04-02T14:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69b0a187290c4ece32ea08c8"
+  },
+  "kor_ime": "andja",
+  "prostor_id": "69aaa1f0e9f560fa8689c326",
+  "jedinica_id": "j22",
+  "naziv": "Sto 1",
+  "nazivProstora": "Subotica Hub",
+  "grad": "Subotica",
+  "status": "kreirana",
+  "od": {
+    "$date": "2026-04-03T08:00:00.000Z"
+  },
+  "do": {
+    "$date": "2026-04-03T16:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69b0a187290c4ece32ea08c9"
+  },
+  "kor_ime": "marina",
+  "prostor_id": "69aaa1f0e9f560fa8689c326",
+  "jedinica_id": "j22_2",
+  "naziv": "Sto 2",
+  "nazivProstora": "Subotica Hub",
+  "grad": "Subotica",
+  "status": "kreirana",
+  "od": {
+    "$date": "2026-04-03T09:00:00.000Z"
+  },
+  "do": {
+    "$date": "2026-04-03T13:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69b0a187290c4ece32ea08ca"
+  },
+  "kor_ime": "paja",
+  "prostor_id": "69aaa1f0e9f560fa8689c31d",
+  "jedinica_id": "j2",
+  "naziv": "Kancelarija 1",
+  "nazivProstora": "Impact Hub",
+  "grad": "Beograd",
+  "status": "kreirana",
+  "od": {
+    "$date": "2026-04-04T08:00:00.000Z"
+  },
+  "do": {
+    "$date": "2026-04-04T12:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69b0a187290c4ece32ea08cb"
+  },
+  "kor_ime": "djole",
+  "prostor_id": "69aaa1f0e9f560fa8689c31d",
+  "jedinica_id": "j2_2",
+  "naziv": "Kancelarija 2",
+  "nazivProstora": "Impact Hub",
+  "grad": "Beograd",
+  "status": "kreirana",
+  "od": {
+    "$date": "2026-04-04T09:00:00.000Z"
+  },
+  "do": {
+    "$date": "2026-04-04T13:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69b0a294290c4ece32ea08cd"
+  },
+  "kor_ime": "tanja",
+  "prostor_id": "69aaa1f0e9f560fa8689c31d",
+  "jedinica_id": "j1",
+  "naziv": "Sto 1",
+  "nazivProstora": "Impact Hub",
+  "grad": "Beograd",
+  "status": "kreirana",
+  "od": {
+    "$date": "2026-03-24T09:00:00.000Z"
+  },
+  "do": {
+    "$date": "2026-03-24T13:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69b0a294290c4ece32ea08ce"
+  },
+  "kor_ime": "velja",
+  "prostor_id": "69aaa1f0e9f560fa8689c31d",
+  "jedinica_id": "j2",
+  "naziv": "Kancelarija 1",
+  "nazivProstora": "Impact Hub",
+  "grad": "Beograd",
+  "status": "kreirana",
+  "od": {
+    "$date": "2026-03-25T10:00:00.000Z"
+  },
+  "do": {
+    "$date": "2026-03-25T16:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69b0a294290c4ece32ea08cf"
+  },
+  "kor_ime": "marina",
+  "prostor_id": "69aaa1f0e9f560fa8689c31d",
+  "jedinica_id": "j3",
+  "naziv": "Sala 1",
+  "nazivProstora": "Impact Hub",
+  "grad": "Beograd",
+  "status": "kreirana",
+  "od": {
+    "$date": "2026-03-26T12:00:00.000Z"
+  },
+  "do": {
+    "$date": "2026-03-26T15:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69b0a294290c4ece32ea08d0"
+  },
+  "kor_ime": "andja",
+  "prostor_id": "69aaa1f0e9f560fa8689c31e",
+  "jedinica_id": "j5",
+  "naziv": "Sto 1",
+  "nazivProstora": "In Centar",
+  "grad": "Beograd",
+  "status": "kreirana",
+  "od": {
+    "$date": "2026-03-27T09:00:00.000Z"
+  },
+  "do": {
+    "$date": "2026-03-27T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69b0a294290c4ece32ea08d1"
+  },
+  "kor_ime": "paja",
+  "prostor_id": "69aaa1f0e9f560fa8689c31e",
+  "jedinica_id": "j6",
+  "naziv": "Kancelarija 1",
+  "nazivProstora": "In Centar",
+  "grad": "Beograd",
+  "status": "kreirana",
+  "od": {
+    "$date": "2026-03-28T10:00:00.000Z"
+  },
+  "do": {
+    "$date": "2026-03-28T14:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69b0a294290c4ece32ea08d2"
+  },
+  "kor_ime": "djole",
+  "prostor_id": "69aaa1f0e9f560fa8689c31e",
+  "jedinica_id": "j7_2",
+  "naziv": "Sala 2",
+  "nazivProstora": "In Centar",
+  "grad": "Beograd",
+  "status": "kreirana",
+  "od": {
+    "$date": "2026-03-29T10:00:00.000Z"
+  },
+  "do": {
+    "$date": "2026-03-29T14:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69b0a294290c4ece32ea08d3"
+  },
+  "kor_ime": "tanja",
+  "prostor_id": "69aaa1f0e9f560fa8689c31f",
+  "jedinica_id": "j4",
+  "naziv": "Sto 1",
+  "nazivProstora": "Smart Office",
+  "grad": "Beograd",
+  "status": "kreirana",
+  "od": {
+    "$date": "2026-03-30T08:00:00.000Z"
+  },
+  "do": {
+    "$date": "2026-03-30T12:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69b0a294290c4ece32ea08d4"
+  },
+  "kor_ime": "velja",
+  "prostor_id": "69aaa1f0e9f560fa8689c31f",
+  "jedinica_id": "j8_2",
+  "naziv": "Kancelarija 2",
+  "nazivProstora": "Smart Office",
+  "grad": "Beograd",
+  "status": "kreirana",
+  "od": {
+    "$date": "2026-03-30T09:00:00.000Z"
+  },
+  "do": {
+    "$date": "2026-03-30T13:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69b0a294290c4ece32ea08d5"
+  },
+  "kor_ime": "marina",
+  "prostor_id": "69aaa1f0e9f560fa8689c31f",
+  "jedinica_id": "j9",
+  "naziv": "Sala 1",
+  "nazivProstora": "Smart Office",
+  "grad": "Beograd",
+  "status": "kreirana",
+  "od": {
+    "$date": "2026-03-31T12:00:00.000Z"
+  },
+  "do": {
+    "$date": "2026-03-31T16:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69b0a294290c4ece32ea08d6"
+  },
+  "kor_ime": "andja",
+  "prostor_id": "69aaa1f0e9f560fa8689c320",
+  "jedinica_id": "j10",
+  "naziv": "Sto 1",
+  "nazivProstora": "Startit Centar",
+  "grad": "Beograd",
+  "status": "kreirana",
+  "od": {
+    "$date": "2026-04-01T08:00:00.000Z"
+  },
+  "do": {
+    "$date": "2026-04-01T16:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69b0a294290c4ece32ea08d7"
+  },
+  "kor_ime": "paja",
+  "prostor_id": "69aaa1f0e9f560fa8689c320",
+  "jedinica_id": "j11_s",
+  "naziv": "Sala 1",
+  "nazivProstora": "Startit Centar",
+  "grad": "Beograd",
+  "status": "kreirana",
+  "od": {
+    "$date": "2026-04-01T09:00:00.000Z"
+  },
+  "do": {
+    "$date": "2026-04-01T12:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69b0a294290c4ece32ea08d8"
+  },
+  "kor_ime": "djole",
+  "prostor_id": "69aaa1f0e9f560fa8689c320",
+  "jedinica_id": "j11_s2",
+  "naziv": "Sala 2",
+  "nazivProstora": "Startit Centar",
+  "grad": "Beograd",
+  "status": "kreirana",
+  "od": {
+    "$date": "2026-04-01T13:00:00.000Z"
+  },
+  "do": {
+    "$date": "2026-04-01T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69b0a294290c4ece32ea08d9"
+  },
+  "kor_ime": "tanja",
+  "prostor_id": "69aaa1f0e9f560fa8689c321",
+  "jedinica_id": "j12_2",
+  "naziv": "Sto 2",
+  "nazivProstora": "Mokrin House",
+  "grad": "Mokrin",
+  "status": "kreirana",
+  "od": {
+    "$date": "2026-04-02T09:00:00.000Z"
+  },
+  "do": {
+    "$date": "2026-04-02T13:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69b0a294290c4ece32ea08da"
+  },
+  "kor_ime": "velja",
+  "prostor_id": "69aaa1f0e9f560fa8689c321",
+  "jedinica_id": "j13_s",
+  "naziv": "Sala 1",
+  "nazivProstora": "Mokrin House",
+  "grad": "Mokrin",
+  "status": "kreirana",
+  "od": {
+    "$date": "2026-04-02T06:00:00.000Z"
+  },
+  "do": {
+    "$date": "2026-04-02T10:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69b0a294290c4ece32ea08db"
+  },
+  "kor_ime": "marina",
+  "prostor_id": "69aaa1f0e9f560fa8689c321",
+  "jedinica_id": "j13_s2",
+  "naziv": "Sala 2",
+  "nazivProstora": "Mokrin House",
+  "grad": "Mokrin",
+  "status": "kreirana",
+  "od": {
+    "$date": "2026-04-02T15:00:00.000Z"
+  },
+  "do": {
+    "$date": "2026-04-02T19:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69b0a294290c4ece32ea08dc"
+  },
+  "kor_ime": "andja",
+  "prostor_id": "69aaa1f0e9f560fa8689c322",
+  "jedinica_id": "j14_2",
+  "naziv": "Sto 2",
+  "nazivProstora": "Deli prostor",
+  "grad": "Niš",
+  "status": "kreirana",
+  "od": {
+    "$date": "2026-04-03T08:00:00.000Z"
+  },
+  "do": {
+    "$date": "2026-04-03T12:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69b0a294290c4ece32ea08dd"
+  },
+  "kor_ime": "paja",
+  "prostor_id": "69aaa1f0e9f560fa8689c322",
+  "jedinica_id": "j15",
+  "naziv": "Sto 1",
+  "nazivProstora": "Deli prostor",
+  "grad": "Niš",
+  "status": "kreirana",
+  "od": {
+    "$date": "2026-04-03T09:00:00.000Z"
+  },
+  "do": {
+    "$date": "2026-04-03T13:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69b0a294290c4ece32ea08de"
+  },
+  "kor_ime": "djole",
+  "prostor_id": "69aaa1f0e9f560fa8689c322",
+  "jedinica_id": "j15_2",
+  "naziv": "Sala 2",
+  "nazivProstora": "Deli prostor",
+  "grad": "Niš",
+  "status": "kreirana",
+  "od": {
+    "$date": "2026-04-03T10:00:00.000Z"
+  },
+  "do": {
+    "$date": "2026-04-03T15:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69b0a294290c4ece32ea08df"
+  },
+  "kor_ime": "tanja",
+  "prostor_id": "69aaa1f0e9f560fa8689c323",
+  "jedinica_id": "j16",
+  "naziv": "Sto 1",
+  "nazivProstora": "Think Inovative",
+  "grad": "Niš",
+  "status": "kreirana",
+  "od": {
+    "$date": "2026-04-04T07:00:00.000Z"
+  },
+  "do": {
+    "$date": "2026-04-04T11:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69b0a294290c4ece32ea08e0"
+  },
+  "kor_ime": "velja",
+  "prostor_id": "69aaa1f0e9f560fa8689c323",
+  "jedinica_id": "j17",
+  "naziv": "Kancelarija 1",
+  "nazivProstora": "Think Inovative",
+  "grad": "Niš",
+  "status": "kreirana",
+  "od": {
+    "$date": "2026-04-04T08:00:00.000Z"
+  },
+  "do": {
+    "$date": "2026-04-04T16:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69b0a294290c4ece32ea08e1"
+  },
+  "kor_ime": "marina",
+  "prostor_id": "69aaa1f0e9f560fa8689c323",
+  "jedinica_id": "j17_2",
+  "naziv": "Kancelarija 2",
+  "nazivProstora": "Think Inovative",
+  "grad": "Niš",
+  "status": "kreirana",
+  "od": {
+    "$date": "2026-04-04T09:00:00.000Z"
+  },
+  "do": {
+    "$date": "2026-04-04T13:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69b0a294290c4ece32ea08e2"
+  },
+  "kor_ime": "andja",
+  "prostor_id": "69aaa1f0e9f560fa8689c324",
+  "jedinica_id": "j18_2",
+  "naziv": "Sto 2",
+  "nazivProstora": "Hub8",
+  "grad": "Beograd",
+  "status": "kreirana",
+  "od": {
+    "$date": "2026-03-25T09:00:00.000Z"
+  },
+  "do": {
+    "$date": "2026-03-25T13:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69b0a294290c4ece32ea08e3"
+  },
+  "kor_ime": "paja",
+  "prostor_id": "69aaa1f0e9f560fa8689c324",
+  "jedinica_id": "j19",
+  "naziv": "Sala 1",
+  "nazivProstora": "Hub8",
+  "grad": "Beograd",
+  "status": "kreirana",
+  "od": {
+    "$date": "2026-03-25T10:00:00.000Z"
+  },
+  "do": {
+    "$date": "2026-03-25T14:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69b0a294290c4ece32ea08e4"
+  },
+  "kor_ime": "djole",
+  "prostor_id": "69aaa1f0e9f560fa8689c324",
+  "jedinica_id": "j19_2",
+  "naziv": "Sala 2",
+  "nazivProstora": "Hub8",
+  "grad": "Beograd",
+  "status": "kreirana",
+  "od": {
+    "$date": "2026-03-25T15:00:00.000Z"
+  },
+  "do": {
+    "$date": "2026-03-25T19:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69b0a294290c4ece32ea08e5"
+  },
+  "kor_ime": "tanja",
+  "prostor_id": "69aaa1f0e9f560fa8689c325",
+  "jedinica_id": "j20",
+  "naziv": "Sto 1",
+  "nazivProstora": "Kreativni Poligon",
+  "grad": "Beograd",
+  "status": "kreirana",
+  "od": {
+    "$date": "2026-03-27T08:00:00.000Z"
+  },
+  "do": {
+    "$date": "2026-03-27T12:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69b0a294290c4ece32ea08e6"
+  },
+  "kor_ime": "velja",
+  "prostor_id": "69aaa1f0e9f560fa8689c325",
+  "jedinica_id": "j20_2",
+  "naziv": "Sto 2",
+  "nazivProstora": "Kreativni Poligon",
+  "grad": "Beograd",
+  "status": "kreirana",
+  "od": {
+    "$date": "2026-03-27T09:00:00.000Z"
+  },
+  "do": {
+    "$date": "2026-03-27T13:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69b0a294290c4ece32ea08e7"
+  },
+  "kor_ime": "marina",
+  "prostor_id": "69aaa1f0e9f560fa8689c325",
+  "jedinica_id": "j21",
+  "naziv": "Sala 1",
+  "nazivProstora": "Kreativni Poligon",
+  "grad": "Beograd",
+  "status": "kreirana",
+  "od": {
+    "$date": "2026-03-27T13:00:00.000Z"
+  },
+  "do": {
+    "$date": "2026-03-27T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69b0a294290c4ece32ea08e8"
+  },
+  "kor_ime": "andja",
+  "prostor_id": "69aaa1f0e9f560fa8689c326",
+  "jedinica_id": "j22",
+  "naziv": "Sto 1",
+  "nazivProstora": "Subotica Hub",
+  "grad": "Subotica",
+  "status": "kreirana",
+  "od": {
+    "$date": "2026-03-29T08:00:00.000Z"
+  },
+  "do": {
+    "$date": "2026-03-29T16:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69b0a294290c4ece32ea08e9"
+  },
+  "kor_ime": "paja",
+  "prostor_id": "69aaa1f0e9f560fa8689c326",
+  "jedinica_id": "j23",
+  "naziv": "Kancelarija 1",
+  "nazivProstora": "Subotica Hub",
+  "grad": "Subotica",
+  "status": "kreirana",
+  "od": {
+    "$date": "2026-03-29T09:00:00.000Z"
+  },
+  "do": {
+    "$date": "2026-03-29T13:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69b0a294290c4ece32ea08ea"
+  },
+  "kor_ime": "djole",
+  "prostor_id": "69aaa1f0e9f560fa8689c326",
+  "jedinica_id": "j23_2",
+  "naziv": "Kancelarija 2",
+  "nazivProstora": "Subotica Hub",
+  "grad": "Subotica",
+  "status": "kreirana",
+  "od": {
+    "$date": "2026-03-29T10:00:00.000Z"
+  },
+  "do": {
+    "$date": "2026-03-29T14:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69b1530e2168d3b9925ac184"
+  },
+  "kor_ime": "djole",
+  "prostor_id": "69aaa1f0e9f560fa8689c322",
+  "jedinica_id": "j14",
+  "naziv": "Sto 1",
+  "nazivProstora": "Deli prostor",
+  "grad": "Niš",
+  "status": "potvrdjena",
+  "od": {
+    "$date": "2026-03-09T09:00:00.000Z"
+  },
+  "do": {
+    "$date": "2026-03-09T12:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69b1530e2168d3b9925ac185"
+  },
+  "kor_ime": "velja",
+  "prostor_id": "69aaa1f0e9f560fa8689c322",
+  "jedinica_id": "j14_2",
+  "naziv": "Sto 2",
+  "nazivProstora": "Deli prostor",
+  "grad": "Niš",
+  "status": "potvrdjena",
+  "od": {
+    "$date": "2026-03-09T11:00:00.000Z"
+  },
+  "do": {
+    "$date": "2026-03-09T14:30:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69b1530e2168d3b9925ac187"
+  },
+  "kor_ime": "marina",
+  "prostor_id": "69aaa1f0e9f560fa8689c322",
+  "jedinica_id": "j15_2",
+  "naziv": "Sala 2",
+  "nazivProstora": "Deli prostor",
+  "grad": "Niš",
+  "status": "potvrdjena",
+  "od": {
+    "$date": "2026-03-10T11:30:00.000Z"
+  },
+  "do": {
+    "$date": "2026-03-10T15:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69b1530e2168d3b9925ac188"
+  },
+  "kor_ime": "djole",
+  "prostor_id": "69aaa1f0e9f560fa8689c322",
+  "jedinica_id": "j14",
+  "naziv": "Sto 1",
+  "nazivProstora": "Deli prostor",
+  "grad": "Niš",
+  "status": "kreirana",
+  "od": {
+    "$date": "2026-03-24T14:00:00.000Z"
+  },
+  "do": {
+    "$date": "2026-03-24T16:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69b1530e2168d3b9925ac189"
+  },
+  "kor_ime": "velja",
+  "prostor_id": "69aaa1f0e9f560fa8689c322",
+  "jedinica_id": "j14_2",
+  "naziv": "Sto 2",
+  "nazivProstora": "Deli prostor",
+  "grad": "Niš",
+  "status": "kreirana",
+  "od": {
+    "$date": "2026-03-25T11:00:00.000Z"
+  },
+  "do": {
+    "$date": "2026-03-25T14:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69b1530e2168d3b9925ac18a"
+  },
+  "kor_ime": "marina",
+  "prostor_id": "69aaa1f0e9f560fa8689c322",
+  "jedinica_id": "j15",
+  "naziv": "Sala 1",
+  "nazivProstora": "Deli prostor",
+  "grad": "Niš",
+  "status": "kreirana",
+  "od": {
+    "$date": "2026-03-26T13:00:00.000Z"
+  },
+  "do": {
+    "$date": "2026-03-26T16:30:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69b1530e2168d3b9925ac18b"
+  },
+  "kor_ime": "tanja",
+  "prostor_id": "69aaa1f0e9f560fa8689c322",
+  "jedinica_id": "j15_2",
+  "naziv": "Sala 2",
+  "nazivProstora": "Deli prostor",
+  "grad": "Niš",
+  "status": "kreirana",
+  "od": {
+    "$date": "2026-03-26T11:00:00.000Z"
+  },
+  "do": {
+    "$date": "2026-03-26T14:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69b1530e2168d3b9925ac18c"
+  },
+  "kor_ime": "djole",
+  "prostor_id": "69aaa1f0e9f560fa8689c322",
+  "jedinica_id": "j14",
+  "naziv": "Sto 1",
+  "nazivProstora": "Deli prostor",
+  "grad": "Niš",
+  "status": "kreirana",
+  "od": {
+    "$date": "2026-03-28T09:00:00.000Z"
+  },
+  "do": {
+    "$date": "2026-03-28T12:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69b1e9bf5a0ba24fb7a80ae7"
+  },
+  "kor_ime": "marina",
+  "prostor_id": "69aaa1f0e9f560fa8689c322",
+  "jedinica_id": "j14",
+  "naziv": "Sto 1",
+  "nazivProstora": "Deli prostor",
+  "grad": "Niš",
+  "status": "kreirana",
+  "od": {
+    "$date": "2026-03-24T10:00:00.000Z"
+  },
+  "do": {
+    "$date": "2026-03-24T14:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69b1f55f5eb1f374c803b9bb"
+  },
+  "kor_ime": "marina",
+  "prostor_id": "69aaa1f0e9f560fa8689c322",
+  "jedinica_id": "j15",
+  "naziv": "Sala 1",
+  "nazivProstora": "Deli prostor",
+  "grad": "Niš",
+  "status": "kreirana",
+  "od": {
+    "$date": "2026-03-26T17:00:00.000Z"
+  },
+  "do": {
+    "$date": "2026-03-26T19:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69b1f9f68868af4991c9124d"
+  },
+  "kor_ime": "marina",
+  "prostor_id": "69aaa1f0e9f560fa8689c322",
+  "jedinica_id": "j15_2",
+  "naziv": "Sala 2",
+  "nazivProstora": "Deli prostor",
+  "grad": "Niš",
+  "status": "kreirana",
+  "od": {
+    "$date": "2026-03-26T15:00:00.000Z"
+  },
+  "do": {
+    "$date": "2026-03-26T18:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69beeeca890a0c0dd1457c3f"
+  },
+  "kor_ime": "tanja",
+  "prostor_id": "69aaa1f0e9f560fa8689c326",
+  "jedinica_id": "j23",
+  "naziv": "Kancelarija 1",
+  "nazivProstora": "Subotica Hub",
+  "grad": "Subotica",
+  "status": "kreirana",
+  "od": {
+    "$date": "2026-03-22T08:17:00.000Z"
+  },
+  "do": {
+    "$date": "2026-03-22T09:17:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69bef4c3890a0c0dd1457d09"
+  },
+  "kor_ime": "tanja",
+  "prostor_id": "69aaa1f0e9f560fa8689c326",
+  "jedinica_id": "j23_2",
+  "naziv": "Kancelarija 2",
+  "nazivProstora": "Subotica Hub",
+  "grad": "Subotica",
+  "status": "kreirana",
+  "od": {
+    "$date": "2026-03-22T08:30:00.000Z"
+  },
+  "do": {
+    "$date": "2026-03-22T11:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69bf29c5895649b3b7053d00"
+  },
+  "kor_ime": "tanja",
+  "prostor_id": "69aaa1f0e9f560fa8689c31f",
+  "jedinica_id": "j9_2",
+  "naziv": "Sala 2",
+  "nazivProstora": "Smart Office",
+  "grad": "Beograd",
+  "status": "potvrdjena",
+  "od": {
+    "$date": "2026-03-18T10:00:00.000Z"
+  },
+  "do": {
+    "$date": "2026-03-18T14:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69bf2b36895649b3b7053d04"
+  },
+  "kor_ime": "tanja",
+  "prostor_id": "69aaa1f0e9f560fa8689c31d",
+  "jedinica_id": "j1",
+  "naziv": "Sto 1",
+  "nazivProstora": "Impact Hub",
+  "grad": "Beograd",
+  "status": "potvrdjena",
+  "od": {
+    "$date": "2026-03-19T09:00:00.000Z"
+  },
+  "do": {
+    "$date": "2026-03-19T13:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69bf2e60895649b3b7053d0b"
+  },
+  "kor_ime": "tanja",
+  "prostor_id": "69aaa1f0e9f560fa8689c320",
+  "jedinica_id": "j11_s",
+  "naziv": "Sala 1",
+  "nazivProstora": "Startit Centar",
+  "grad": "Beograd",
+  "status": "potvrdjena",
+  "od": {
+    "$date": "2026-03-17T09:00:00.000Z"
+  },
+  "do": {
+    "$date": "2026-03-17T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69bf6d3e5270d36def0a0b6d"
+  },
+  "kor_ime": "tanja",
+  "prostor_id": "69aaa1f0e9f560fa8689c322",
+  "jedinica_id": "j15",
+  "naziv": "Sala 1",
+  "nazivProstora": "Deli prostor",
+  "grad": "Niš",
+  "status": "potvrdjena",
+  "od": {
+    "$date": "2026-03-21T20:00:00.000Z"
+  },
+  "do": {
+    "$date": "2026-03-21T21:30:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69bf72605270d36def0a0b72"
+  },
+  "kor_ime": "tanja",
+  "prostor_id": "69aaa1f0e9f560fa8689c322",
+  "jedinica_id": "j15",
+  "naziv": "Sala 1",
+  "nazivProstora": "Deli prostor",
+  "grad": "Niš",
+  "status": "kreirana",
+  "od": {
+    "$date": "2026-03-22T04:00:00.000Z"
+  },
+  "do": {
+    "$date": "2026-03-22T05:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69bf72735270d36def0a0b74"
+  },
+  "kor_ime": "tanja",
+  "prostor_id": "69aaa1f0e9f560fa8689c322",
+  "jedinica_id": "j15",
+  "naziv": "Sala 1",
+  "nazivProstora": "Deli prostor",
+  "grad": "Niš",
+  "status": "kreirana",
+  "od": {
+    "$date": "2026-03-21T16:00:00.000Z"
+  },
+  "do": {
+    "$date": "2026-03-21T18:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69bf728a5270d36def0a0b76"
+  },
+  "kor_ime": "tanja",
+  "prostor_id": "69aaa1f0e9f560fa8689c322",
+  "jedinica_id": "j15",
+  "naziv": "Sala 1",
+  "nazivProstora": "Deli prostor",
+  "grad": "Niš",
+  "status": "kreirana",
+  "od": {
+    "$date": "2026-03-21T08:00:00.000Z"
+  },
+  "do": {
+    "$date": "2026-03-21T10:00:00.000Z"
+  }
+}]

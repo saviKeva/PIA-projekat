@@ -1,0 +1,51 @@
+<div class="container mt-5" *ngIf="prostor">
+  <div class="card shadow-lg border-0 overflow-hidden">
+    <div class="row g-0">
+
+      <div class="col-md-6 bg-dark p-3 d-flex flex-column align-items-center">
+
+        <div class="main-img-container mb-3 position-relative">
+          <img [src]="'http://localhost:4000/uploads/' + glavnaSlika"
+              class="img-fluid rounded shadow"
+              style="max-height: 400px; object-fit: contain;"
+              alt="Glavna slika">
+
+          <div class="zoom-overlay" (click)="uvecajSliku(glavnaSlika)">
+            <i class="bi bi-search"></i>
+          </div>
+        </div>
+
+        <div class="d-flex justify-content-center gap-2">
+          <div *ngFor="let slika of prostor.slike.slice(0, 5)" (click)="postaviGlavnuSliku(slika)" style="cursor: pointer;">
+            <img [src]="'http://localhost:4000/uploads/' + slika"
+                class="img-thumbnail"
+                [class.border-warning]="slika === glavnaSlika"
+                [class.border-3]="slika === glavnaSlika"
+                style="width: 80px; height: 60px; object-fit: cover;">
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 p-4 bg-white">
+        <h2 class="display-5">{{ prostor.naziv }}</h2>
+        <p class="text-muted"><i class="bi bi-geo-alt"></i> {{ prostor.grad }}, {{ prostor.adresa }}</p>
+        <hr>
+        <p><strong>Firma:</strong> {{ prostor.firma }}</p>
+        <p><strong>Menadžer:</strong> {{ prostor.menadzer }}</p>
+
+        <div class="d-flex gap-4 mt-4">
+          <div class="text-success h5">
+            <i class="bi bi-hand-thumbs-up"></i> {{ prostor.likes }}
+          </div>
+          <div class="text-danger h5">
+            <i class="bi bi-hand-thumbs-down"></i> {{ prostor.dislikes }}
+          </div>
+        </div>
+
+        <button class="btn btn-secondary mt-5" (click)="nazad()">Vrati se nazad</button>
+      </div>
+
+    </div> </div> </div> <div class="custom-modal" *ngIf="isModalOpen" (click)="zatvoriModal()">
+  <span class="close-icon">&times;</span>
+  <img [src]="'http://localhost:4000/uploads/' + slikaZaUvecanje" class="modal-img">
+</div>

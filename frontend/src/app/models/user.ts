@@ -1,0 +1,16 @@
+export default class User{
+  kor_ime = ""
+  lozinka = ""
+  ime = ""
+  prezime=""
+  pol=""
+  adresa=""
+  tel=""
+  mejl=""
+  tip=""
+  slika=""
+  firmaNaziv=""
+  adresaSedista=""
+  maticniBroj=""
+  pib=""
+}

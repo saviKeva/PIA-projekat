@@ -1,0 +1,56 @@
+<div class="container">
+  <div class="row mb-4">
+    <div class="col">
+      <h2 class="border-bottom pb-2">Rezervacije mojih prostora u tekucoj nedelji</h2>
+    </div>
+  </div>
+
+  <div class="table-responsive shadow-sm" *ngIf="rezervacije.length>0">
+  <table class="table table-hover align-middle">
+    <thead class="table-light">
+      <tr>
+        <th>Naziv jedinice</th>
+        <th>Naziv prostora</th>
+        <th>Rezervaciju napravio</th>
+        <th>Grad</th>
+        <th>status</th>
+        <th>Termin od</th>
+        <th>Termin do</th>
+        <th>Akcija</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr *ngFor="let r of rezervacije" [ngClass]="{'potvrdjen-red': r.status === 'potvrdjena'}">
+        <td>{{r.naziv}}</td>
+        <td>{{r.nazivProstora}}</td>
+        <td>{{r.kor_ime}}</td>
+        <td>{{r.grad}}</td>
+        <td>{{r.status}}</td>
+        <td>{{r.od | date:'dd.MM.yyyy. HH:mm':'UTC'}}</td>
+        <td>{{r.do | date:'HH:mm':'UTC'}}</td>
+        <td>
+          <ng-container *ngIf="r.status === 'kreirana'">
+            <button class="btn btn-success btn-sm me-2" *ngIf="mozeDaPotvrdi(r.od,r.do)" (click)="potvrdi(r._id!)">
+              Potvrdi
+            </button>
+
+            <button *ngIf="mozeDaOtkaze(r.od)" class="btn btn-danger btn-sm" (click)="otkazi(r._id!)">
+              Otkaži
+            </button>
+          </ng-container>
+        </td>
+      </tr>
+
+
+    </tbody>
+  </table>
+
+
+</div>
+
+<div *ngIf="rezervacije.length === 0">
+  <h2 class="text-center">Nemate nikakvih rezervacija!</h2>
+</div>
+
+</div>

@@ -1,0 +1,72 @@
+<div class="card p-4 shadow mb-4">
+  <div class="row g-3">
+    <div class="col-md-12">
+      <input type="text" class="form-control" [(ngModel)]="pretragaTekst" placeholder="Pretrazi po nazivu ili gradu...">
+
+    </div>
+
+    <div class="col-md-4">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" [checked]="izabraniTip==='sto'"
+          [disabled]="izabraniTip!==null && izabraniTip !=='sto'" (change)="toggleTip('sto')">
+        <label class="form-check-label">Radni sto u otvorenom prostoru</label>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" [checked]="izabraniTip==='kancelarija'"
+          [disabled]="izabraniTip!== null && izabraniTip !=='kancelarija'" (change)="toggleTip('kancelarija')">
+        <label class="form-check-label">Kancelarija</label>
+      </div>
+
+      <input *ngIf="izabraniTip === 'kancelarija'" type="number" class="form-control form-control-sm mt-2"
+        [(ngModel)]="brojOsobaKancelarija" placeholder="Broj osoba?">
+    </div>
+
+    <div class="col-md-4">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" [checked]="izabraniTip === 'sala'"
+          [disabled]="izabraniTip !== null && izabraniTip !== 'sala'" (change)="toggleTip('sala')">
+        <label class="form-check-label">Konf. sala (10-12 osoba)</label>
+      </div>
+    </div>
+
+    <div class="col-12 text-end">
+      <button class="btn btn-primary" (click)="pretrazi()">Pronadji prostor</button>
+    </div>
+  </div>
+</div>
+
+<div class="table-responsive" *ngIf="rezultati.length > 0">
+  <table class="table table-hover align-middle">
+
+    <thead class="table-light">
+
+      <tr>
+        <th>Naziv</th>
+        <th>Grad</th>
+        <th>Akcija</th>
+      </tr>
+
+    </thead>
+
+    <tbody>
+      <tr *ngFor="let p of rezultati">
+        <td>{{p.naziv}}</td>
+        <td>{{p.grad}}</td>
+        <td>
+          <!-- ponta query params je da imam negde sacuvano sta je korisnik stiklirao za prikaz da samo taj tip prostorija prikazem, a ne sve -->
+          <button class="btn btn-outline-primary btn-sm" [routerLink]="['/clanMreze/detaljiPretraga', p._id]" [queryParams]="{tip:izabraniTip}">
+            DETALJI
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div class="container mt-3" *ngIf="flag">
+  <div class="alert alert-warning text-center">
+    {{ message }}
+  </div>
+</div>

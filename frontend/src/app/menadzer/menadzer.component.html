@@ -1,0 +1,45 @@
+<nav class="navbar fixed-top navbar-dark" style="background-color: #439648;">
+  <div class="container-fluid">
+    <a class="navbar-brand font-weight-bold" >Coworking Hub</a>
+
+    <div class="d-flex align-items-center ms-auto">
+
+      <button class="btn btn-outline-light btn-sm me-2" (click)="logout()">
+        Odjavi se
+      </button>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#glavniMeni">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+
+    <div class="collapse navbar-collapse" id="glavniMeni">
+      <div class="navbar-nav">
+        <a class="nav-link" routerLink="/menadzer/profil" routerLinkActive="active-link">
+          <i class="bi bi-person"></i> Moj profil
+        </a>
+
+        <a class="nav-link" routerLink="/menadzer/prostori" routerLinkActive="active-link">
+          <i class="bi bi-search"></i> Dodaj i azuriraj prostore
+        </a>
+
+        <a class="nav-link" routerLink="/menadzer/rezervacije" routerLinkActive="active-link">
+          <i class="bi bi-search"></i> Rezervacije za moje prostore
+        </a>
+
+        <a class="nav-link" routerLink="/menadzer/kalendar" routerLinkActive="active-link">
+          <i class="bi bi-search"></i>Interaktivni kalendar
+        </a>
+
+        <a class="nav-link" routerLink="/menadzer/izvestaj" routerLinkActive="active-link">
+          <i class="bi bi-search"></i>Mesečni izveštaj
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<div class="container" style="margin-top: 100px;">
+  <h2 class="text-center" *ngIf="router.url === '/clanMreze'">Dobro došli, {{user.kor_ime}}</h2>
+  <router-outlet></router-outlet>
+</div>

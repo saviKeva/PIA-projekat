@@ -1,0 +1,39 @@
+<div class="container mt-4">
+  <div class="row mb-4">
+    <div class="col-12">
+      <h2 class="border-bottom pb-2">Administratorska statistika - 2026</h2>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-7 mb-4">
+      <div class="card shadow-sm border-0">
+        <div class="card-body">
+          <h5 class="card-title text-muted mb-4">Finansijski pregled po prostorima</h5>
+          <div style="position: relative; height: 350px;">
+            <canvas baseChart
+              [data]="prihodData"
+              [options]="chartOptions"
+              [type]="'bar'">
+            </canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-5 mb-4">
+      <div class="card shadow-sm border-0">
+        <div class="card-body">
+          <h5 class="card-title text-muted mb-4">Popularnost (udeo rezervacija)</h5>
+          <div style="position: relative; height: 350px;">
+            <canvas baseChart
+              [data]="popularnostData"
+              [options]="chartOptions"
+              [type]="'pie'">
+            </canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

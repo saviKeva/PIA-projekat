@@ -1,0 +1,44 @@
+[{
+  "_id": {
+    "$oid": "69b04eff8d43fdee6bbff813"
+  },
+  "kor_ime": "tanja",
+  "prostor_id": "69aaa1f0e9f560fa8689c321",
+  "menadzer_kor_ime": "branko",
+  "datum": {
+    "$date": "2026-03-10T17:03:59.923Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69b1e9804fb89aef75e4b3a0"
+  },
+  "kor_ime": "marina",
+  "prostor_id": "69aaa1f0e9f560fa8689c322",
+  "menadzer_kor_ime": "nikola",
+  "datum": {
+    "$date": "2026-03-11T22:15:28.829Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69b202fc0a3c4e167e66286f"
+  },
+  "kor_ime": "marina",
+  "prostor_id": "69aaa1f0e9f560fa8689c322",
+  "menadzer_kor_ime": "nikola",
+  "datum": {
+    "$date": "2026-03-11T22:15:28.829Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69b2030b0a3c4e167e662871"
+  },
+  "kor_ime": "marina",
+  "prostor_id": "69aaa1f0e9f560fa8689c322",
+  "menadzer_kor_ime": "nikola",
+  "datum": {
+    "$date": "2026-03-11T22:15:28.829Z"
+  }
+}]
