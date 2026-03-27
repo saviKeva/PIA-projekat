@@ -1,0 +1,40 @@
+{
+  "naziv": "Deli Kreativni Centar",
+  "grad": "Niš",
+  "adresa": "7. jula, 15",
+  "firma": "Deli Niš",
+  "kor_ime": "nikola",
+  "likes":0,
+  "dislikes":0,
+  "menadzer": "Nikola Nikić",
+  "opis": "Novi prošireni prostor u centru Niša namenjen isključivo IT startupima i dizajnerima. Nudi ultra brzi internet i ergonomsku opremu.",
+  "maxKazne": 3,
+  "slike": ["default.jpg"],
+  "lokacija": {
+    "lat": 43.3215,
+    "lng": 21.8961
+  },
+  "jedinice": [
+    {
+      "tip": "sto",
+      "naziv": "Sto A1",
+      "kapacitet": 1,
+      "cena": 1200,
+      "oprema": "Monitor 27 inča, mehanička tastatura"
+    },
+    {
+      "tip": "kancelarija",
+      "naziv": "Kancelarija Fokus",
+      "kapacitet": 4,
+      "cena": 5000,
+      "oprema": "Bela tabla, klima uređaj"
+    },
+    {
+      "tip": "sala",
+      "naziv": "Sala Brainstorm",
+      "kapacitet": 11,
+      "cena": 8000,
+      "oprema": "Projektor, surround sistem, 4K TV"
+    }
+  ]
+}

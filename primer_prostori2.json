@@ -1,0 +1,38 @@
+{
+  "naziv": "Mokrin Garden View",
+  "grad": "Mokrin",
+  "adresa": "Svetog Save 27",
+  "firma": "Terra Panonica",
+  "kor_ime": "branko",
+  "menadzer": "Branko Branković",
+  "opis": "Dodatni objekat u okviru Mokrin House kompleksa sa pogledom na baštu. Mirna zona bez buke, idealna za duboki rad (deep work).",
+  "maxKazne": 3,
+  "slike": ["default.jpg"],
+  "lokacija": {
+    "lat": 45.9340,
+    "lng": 20.4170
+  },
+  "jedinice": [
+    {
+      "tip": "sto",
+      "naziv": "Premium Sto 1",
+      "kapacitet": 1,
+      "cena": 2500,
+      "oprema": "Stajaći sto (standing desk)"
+    },
+    {
+      "tip": "kancelarija",
+      "naziv": "Team Room 1",
+      "kapacitet": 6,
+      "cena": 7500,
+      "oprema": "Privatni mini bar, brzi štampač"
+    },
+    {
+      "tip": "sala",
+      "naziv": "Green Sala",
+      "kapacitet": 11,
+      "cena": 12000,
+      "oprema": "Video conferencing oprema, zvučna izolacija"
+    }
+  ]
+}
