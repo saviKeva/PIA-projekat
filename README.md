@@ -16,6 +16,6 @@ Projekat iz Programiranja Internet Aplikacija JAN/FEB 2026. godine
 **Stvari koje treba doraditi:**
 * Fali izmena jedinica u okviru nekog prostora kao deo forme kod menadzera, npr. dodavanje nove jednice, promena naziva/cene/kapaciteta postojecih jeidinica itd. za konkretan prostor menadzera.
 * Fali da se kod generisanja izvestaja doda za koji mesec / godinu mi treba izvestaj o popunjenosti tog prostora
-* Fali da se doda poruka na fronu, tj da se uhvati poruka sa backa i prikaze na frontu kad se menja profilna slika kad se stavi vece od 300 px ili manje od 100px kod profila usera/menadzera itd.
+* Fali da se doda poruka na frontu, tj da se uhvati poruka sa backa i prikaze na frontu kad se menja profilna slika kad se stavi vece od 300 px ili manje od 100px kod profila usera/menadzera itd. (multer i validateImageDimensions fja)
 
 
