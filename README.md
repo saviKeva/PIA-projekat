@@ -1,5 +1,6 @@
 # PIA-projekat
 Projekat iz Programiranja Internet Aplikacija JAN/FEB 2026. godine
+
 **Napomene:** 
 * podaci za bazu su za mart 2026. godine i potrebno je promeniti ih da bi se testirala aplikacija ako se ovaj projekat ikada kasnije negde koristi. 
 * U fajlu biblioteke.txt je skript za upit za MongoDB bazu koji omogucava pomeranje svih datuma u kolekcji za odredjen broj dana, pa se to moze iskoristiti da se izbegne rucno menjanje podataka u bazi.
