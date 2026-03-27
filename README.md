@@ -11,7 +11,7 @@ Projekat iz Programiranja Internet Aplikacija JAN/FEB 2026. godine
 * Trenutne rezervacije menadzera - one u tekucoj nedelji.
 * Potvrdjena rezervacija znaci da je korisnik dosao najkasnije 10 min po pocetku termina i one ce biti kod menadzera precrtane. One koje su u buducnosti ili su pocele a menadzer ih nije jos uvek oznacio -> one imaju status kreirana. Rezervacija moze da se otkaze ako se korisnik nije pojavio nakon 10 min i status je kreirana, ili moze da s potvrdi ako je proslo 10 min i korisnik je dosao. U prvom slucaju korisnik dobija kaznu, i rezevacija se brise iz baze, u drugom slucaju se ne brise samo menja status u potvrdjena i postaje precrtana u tabeli menadzera.
 * Korisnik koji dobije tri kazne za neki prostor, bez obzira na jedinicu tog prostora, ne sme vise niti da rezervise niti da komentarise nista u tom prostoru!
-* za dodavanje prostora iz JSON fajla paziti da ako sama ne stavim id jedinice, on ce dodati oid sam, i zato imam provere za jedinica_id u detalji-pretraga komponenti za rezervisi i filtrirajZaKalendar metodama.
+* za dodavanje prostora iz JSON fajla paziti da ako sama ne stavim id jedinice, on ce dodati oid sam, i zato imam provere za jedinica_id u detalji-pretraga komponenti za rezervisi i filtrirajZaKalendar metodama. (test primeri prostor-primer1 i pimer-prostori2).
 
 **Stvari koje treba doraditi:**
 * Fali izmena jedinica u okviru nekog prostora kao deo forme kod menadzera, npr. dodavanje nove jednice, promena naziva/cene/kapaciteta postojecih jeidinica itd. za konkretan prostor menadzera.
