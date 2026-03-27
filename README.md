@@ -3,7 +3,7 @@ Projekat iz Programiranja Internet Aplikacija JAN/FEB 2026. godine
 
 **Napomene:** 
 * podaci za bazu su za mart 2026. godine i potrebno je promeniti ih da bi se testirala aplikacija ako se ovaj projekat ikada kasnije negde koristi. 
-* U fajlu biblioteke.txt je skript za upit za MongoDB bazu koji omogucava pomeranje svih datuma u kolekcji za odredjen broj dana, pa se to moze iskoristiti da se izbegne rucno menjanje podataka u bazi.
+* U fajlu biblioteke.txt je skript za upit za MongoDB bazu koji omogucava pomeranje svih datuma u kolekciji za odredjen broj dana, pa se to moze iskoristiti da se izbegne rucno menjanje podataka u bazi.
 * Koriscen je nodemailer, za to je potrebno generisati sa svog gmail naloga sifru da bi radilo i ostaviti svoj nalog. Takodje, ovo ce raditi samo ako je korisnik kome se salje link za reset lozinke otvara gmail na istom racunaru gde je i server aplikacije.
  **Pretpostavke za nejasnoce u projektu**:
 * uvek postoji jedan otvoreni prostor, u prostori kolekciji imam niz jedinice. Ako je tip sto, misli se na sto u otvorenom prostoru, ako je tip kancelarija - kancelarija, ako je tip sala - konferencijska sala. Korisnik sto u otvorenom prosoru rezervise u punom kapacitetu ne moze rezervisati pojedinacno mesto za stolom, ali moze pojedinacan sto u otvorenom prostoru. Kancelariju clan mreze rezervise u punom kapacitetu, takodje salu moze da rezervise u punom kapacitetu i nikako drugacije. Svi prostori rade od 8 do 23 h (moja neka pretpostavka zbog generisanja statistike kod admina i izvestaja sa JSPDF kod menadzera).
